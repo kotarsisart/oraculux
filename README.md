@@ -107,5 +107,9 @@ Emotion over logic
 Illusion over truth
 The system is not meant to answer.
 It is meant to feel like it does.
+
+---
+
 💡 Author
+
 Part of the kotarsis ecosystem — a collection of concept-driven projects combining engineering, design, and interactive storytelling.
