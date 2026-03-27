@@ -1,0 +1,73 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  padding-inline: s.$space-xs;
+  background-color: var(--header-footer-bg);
+  height: 65px;
+  
+
+  @include mx.mq(break-768) { 
+    padding-inline: s.$space-l;
+  }
+  @include mx.mq(break-1024) { 
+    padding-inline: s.$space-xl;
+  }
+
+  &-logo {
+    width: 170px;
+
+    @include mx.mq(break-768) {
+      width: 200px;
+    }
+  }
+
+  &__lang-select {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-s;
+    padding: s.$space-s;
+    background-color: var(--lang-select-bg);
+    border-radius: var(--main-radius);
+    height: 100%;
+    cursor: pointer;
+    
+    &:hover .header__lang-select-icon {
+      transform: rotate(360deg);
+    }
+
+    @include mx.mq(break-768) {
+      padding-inline: s.$space-m;
+    }
+
+    &-text {
+      display: none;
+
+      @include mx.mq(break-360) {
+        display: flex;
+        @include tp.header-lang-select;
+      }
+    }
+
+    &-icon {
+      width: 40px;
+      transition: transform 1s ease;
+      transform-origin: center;
+
+      @include mx.mq(break-768) {
+        width: 50px; 
+      }
+    }
+  }
+}

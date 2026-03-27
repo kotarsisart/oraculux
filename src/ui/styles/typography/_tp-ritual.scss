@@ -1,0 +1,74 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --ritual-description-320: 15px;
+  --ritual-description-768: 20px;
+  --ritual-description-1024: 28px;
+
+  --ritual-circle-question-320: 15px;
+  --ritual-circle-question-768: 17px;
+
+  --ritual-circle-call-320: 15px;
+  --ritual-circle-call-768: 17px;
+
+  --ritual-circle-scanning-320: 13px;
+  --ritual-circle-scanning-768: 15px;
+
+  --ritual-circle-answer-320: 13px;
+  --ritual-circle-answer-768: 15px;
+}
+
+@mixin ritual-description {
+  font-size: var(--ritual-description-320);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-subline);
+
+  @include mx.mq(break-768) {
+    font-size: var(--ritual-description-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--ritual-description-1024);
+  }
+}
+
+@mixin ritual-circle-question {
+  font-size: var(--ritual-circle-question-320);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-ritual-question);
+
+  @include mx.mq(break-768) {
+    font-size: var(--ritual-circle-question-768);
+    font-weight: var(--font-weight-semibold);
+  }
+}
+
+@mixin ritual-circle-call {
+  font-size: var(--ritual-circle-call-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--ritual-circle-call-768);
+  }
+}
+
+@mixin ritual-circle-scanning {
+  font-size: var(--ritual-circle-scanning-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--ritual-circle-scanning-768);
+    color: var(--text-ritual-scanning);
+  }
+}
+
+@mixin ritual-circle-answer {
+  font-size: var(--ritual-circle-answer-320);
+  font-weight: var(--font-weight-semibold);
+
+  @include mx.mq(break-768) {
+    font-size: var(--ritual-circle-answer-768);
+    font-weight: var(--font-weight-medium);
+  }
+}

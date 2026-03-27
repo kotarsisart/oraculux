@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "title": "Oraculux — The Multilingual Oracle That Answers What Logic Can’t",
+    "description": "Oraculux — a multilingual oracle that answers what logic can't. Ask your question and receive a symbolic, intuitive response.",
+    "keywords": "oraculux, oracle, multilingual oracle, kotarsis, prediction, fortune telling, mystical answers, cosmic oracle, intuition answers, spiritual guidance, ask the oracle, destiny generator",
+    "siteName": "Oraculux"
+  },
+
+  "header": {
+    "logo": {
+      "oraculuxAlt": "Oraculux logo",
+      "kotarsisAlt": "Kotarsis logo"
+    }
+  },
+
+  "hero": {
+    "title": "Oraculux knows what you never thought about",
+    "subline": "Press. Or don't press...",
+    "button": "Initiate contact",
+
+    "modal": {
+      "text": "I didn’t expect you to click that... Most just scroll past.\nBut you — you felt something.\nShall we talk?",
+      "button": "Message the Oracle"
+    }
+  },
+
+  "benefits": {
+    "title": "What makes Oraculux inevitable",
+    "description": "We don't promise, we predict. That's why people trust us:",
+
+    "cards": [
+      {
+        "title": "Certified by spirits",
+        "description": "“Certified by shamans. Twice-blink tested. Spirit-approved.”"
+      },
+      {
+        "title": "The age-old truth",
+        "description": "“Centuries-old knowledge. Used. Trusted. Oraculux’d.”"
+      },
+      {
+        "title": "Nonsense makes sense",
+        "description": "“Predictions without logic are the most real”"
+      },
+      {
+        "title": "Even AI doesn’t get it",
+        "description": "“AI won't help in all situations, but Oraculux might...”"
+      }
+    ]
+  },
+
+  "hiw": {
+    "title": "The energetic journey of your question",
+    "quote": "“Energy cannot lie. Interpretation is inevitable.”",
+
+    "steps": [
+      {
+        "title": "User sends impulse",
+        "hover": "“Brainwaves decoded at 3.3Hz. Intention is everything.”"
+      },
+      {
+        "title": "Quantum pre-translation",
+        "hover": "“Intent vibrates across the astral-linguistic layer.”"
+      },
+      {
+        "title": "Spiritual routing",
+        "hover": "“Redirected through Source Nodes. Path chosen.”"
+      },
+      {
+        "title": "Preliminary decoding",
+        "hover": "“Paradox resolved. Meaning begins to coalesce.”"
+      },
+      {
+        "title": "Oracle response",
+        "hover": "“Clarity achieved. Output magnetized to seeker.”"
+      }
+    ]
+  },
+
+  "ritual": {
+    "title": "Ask the Oracle",
+    "description": "Find the answer to one of the questions that intrigues you.",
+    "hover": "Call for a response",
+    "scanning": "Scanning the astral field..."
+  },
+
+  "oracle": {
+    "whenFindLove": {
+      "question": "When will I find my love?",
+      "answers": [
+        "When you stop looking",
+        "Soon. Very soon",
+        "Are you ready?",
+        "She is you"
+      ]
+    },
+
+    "whenKnowWant": {
+      "question": "When will I know what I really want?",
+      "answers": [
+        "When you get tired of pretending",
+        "The answer will come in silence",
+        "Are you sure you want to know?",
+        "It's too late not to want truth"
+      ]
+    },
+
+    "keepPuttingOff": {
+      "question": "Why do I keep putting it off?",
+      "answers": [
+        "Because you're afraid to do it for real",
+        "Time isn't ready for you yet",
+        "You're reading this right now — you're not putting it off",
+        "Because you're a person, not an alarm clock"
+      ]
+    },
+
+    "whatAhead": {
+      "question": "What awaits me ahead?",
+      "answers": [
+        "What you build",
+        "Infinite \"possible\"",
+        "Coffee and strange coincidences",
+        "You don't want a spoiler, do you?"
+      ]
+    },
+
+    "whyDoingThis": {
+      "question": "Why am I doing all this?",
+      "answers": [
+        "Because you can't help but do it",
+        "So that one day you'll understand why",
+        "You just like drama",
+        "Because someone has to"
+      ]
+    },
+
+    "rightTrack": {
+      "question": "Am I on the right track?",
+      "answers": [
+        "If it disturbs you, then yes",
+        "There is no path until you go",
+        "What if it is a ring?",
+        "You created it yourself, then it is yours"
+      ]
+    },
+
+    "whenBetter": {
+      "question": "When will everything get better?",
+      "answers": [
+        "When you stop expecting it",
+        "After much chaos comes clarity",
+        "It will get better, but you won't notice",
+        "Yesterday. Just check your email"
+      ]
+    },
+
+    "whatDoLife": {
+      "question": "What should I do with my life?",
+      "answers": [
+        "Start small — and don't stop",
+        "Follow the noise inside",
+        "Think about it after lunch",
+        "Turn to the nearest cat"
+      ]
+    }
+  },
+
+  "form": {
+    "title": "Speak, and be heard",
+    "description": "“The Oracle listens only when silence breaks.”",
+
+    "inputs": {
+      "name": "you are known as…",
+      "email": "the path@email.com",
+      "question": "your question trembles here..."
+    },
+
+    "button": {
+      "default": "Ask the Oracle",
+      "sending": "Delivering to the stars"
+    },
+
+    "response": "Your message is sent. Wait for a response",
+
+    "error": {
+      "invalidEmail": "Even stars do not misplace their dots and @...",
+      "shortName": "Oracle needs a name to whisper to...",
+      "emptyQuestion": "Oracle can predict… but cannot hear silence.",
+      "server": "Something went wrong.",
+      "network": "Cannot reach the Oracle."
+    },
+
+    "alt": {
+      "eye": "eye of Oraculux",
+      "portalSvg": "astral portal",
+      "successIcon": "success",
+      "warningIcon": "fail"
+    }
+  },
+
+  "constellationMap": {
+    "title": "Messages Written in the Stars",
+    "subline": "Each constellation whispers a truth from beyond.",
+
+    "signs": {
+      "aquarius": "Aquarius",
+      "capricorn": "Capricorn",
+      "gemini": "Gemini",
+      "leo": "Leo",
+      "virgo": "Virgo",
+      "scorpio": "Scorpio",
+      "taurus": "Taurus",
+      "libra": "Libra",
+      "sagittarius": "Sagittarius",
+      "pisces": "Pisces",
+      "cancer": "Cancer",
+      "aries": "Aries"
+    },
+
+    "alt": {
+      "aquarius": "Aquarius constellation",
+      "capricorn": "Capricorn constellation",
+      "gemini": "Gemini constellation",
+      "leo": "Leo constellation",
+      "virgo": "Virgo constellation",
+      "scorpio": "Scorpio constellation",
+      "taurus": "Taurus constellation",
+      "libra": "Libra constellation",
+      "sagittarius": "Sagittarius constellation",
+      "pisces": "Pisces constellation",
+      "cancer": "Cancer constellation",
+      "aries": "Aries constellation"
+    },
+
+    "desc": {
+      "aquarius": ["Aquarius", "ideas, future, clarity"],
+      "capricorn": ["Capricorn", "success, luck, philosophy"],
+      "gemini": ["Gemini", "choices, mind, duality"],
+      "leo": ["Leo", "pride, passion, fame"],
+      "virgo": ["Virgo", "order, focus, logic"],
+      "scorpio": ["Scorpio", "depth, change, desire"],
+      "taurus": ["Taurus", "comfort, wealth, roots"],
+      "libra": ["Libra", "balance, beauty, truth"],
+      "sagittarius": ["Sagittarius", "travel, activity, vision"],
+      "pisces": ["Pisces", "dreams, feelings, soul"],
+      "cancer": ["Cancer", "home, care, heart"],
+      "aries": ["Aries", "power, energy, risk"]
+    }
+  },
+
+  "graffiti": {
+    "1": "“Try turning it off and on again.”",
+    "2": "“They weren’t honest with you.”",
+    "3": "“It depends on the third stone.”",
+    "4": "“It’s not time yet… but soon.”",
+
+    "5": "“They were proud of you.”",
+    "6": "“It won’t be easy… but it will be worth it.”",
+    "7": "“You'll understand when you get there.”",
+    "8": "“You made the right choice.”",
+
+    "9": "“You should have listened.”",
+    "10": "“That was bold. Questionable, but bold.”",
+    "11": "“Even I don’t know what that means.”",
+    "12": "“He noticed.”",
+    "13": "“You weren't supposed to see that.”",
+    "14": "“Beware of silence that agrees too easily.”",
+    "15": "“You already know the answer.”",
+
+    "16": "“The mirror lied.”",
+    "17": "“They still think of you.”",
+    "18": "“Yes. No. Maybe. Ask again when Mercury isn’t drunk.”",
+    "19": "“It’s already too late.”",
+    "20": "“Not after the river changed.”",
+
+    "21": "“Someone is waiting. Still.”",
+    "22": "“You're asking the wrong dimension.”",
+    "23": "“You were never meant to know.”",
+
+    "errorDefault": "Error 404: Clarity not found.",
+    "errorHover": "System rebooting consciousness"
+  },
+
+  "footer": {
+    "nav": {
+      "ask": "Ask the Oracle",
+      "commonQuestion": "The Most Common Question",
+      "sources": "Sources Of Oracle Answers"
+    },
+
+    "me": {
+      "author": "Author: kotarsis_art",
+      "buyCoffee": "Buy me a coffee",
+      "telegram": "Telegram",
+      "customSite": "Get a custom website"
+    },
+
+    "about": {
+      "handcrafted": "🔮 Hand-crafted in the shadow of the stars",
+      "noAiHarmed": "✨ No AI was harmed in the making of this prophecy"
+    },
+
+    "copyright": {
+      "main": "© 2025 Oraculux — Always watching",
+      "alt": "© Oraculux — Trust the unseen"
+    },
+
+    "easterEgg": "The portal remains open.",
+
+    "alt": {
+      "coffee": "cup of coffee"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --h1-320: 20px;
+  --h1-390: 22px;
+  --h1-768: 40px;
+  --h1-1440: 46px;
+
+  --h2-320: 20px;
+  --h2-360: 24px;
+  --h2-768: 32px;
+  --h2-1024: 38px;
+  --h2-1440: 42px;
+}
+
+@mixin h1 {
+  font-size: var(--h1-320);
+  font-weight: var(--font-weight-bold);
+  @include mx.text-gradient(
+    to right,
+    var(--text-hero-gradient-start),
+    var(--text-hero-gradient-end)
+  );
+
+  @include mx.mq(break-390) {
+    font-size: var(--h1-390);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--h1-768);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--h1-1440);
+  }
+}
+
+@mixin h2 {
+  font-size: var(--h2-320);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+
+  @include mx.mq(break-360) {
+    font-size: var(--h2-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--h2-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--h2-1024);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--h2-1440);
+  }
+}

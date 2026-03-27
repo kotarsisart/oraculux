@@ -1,0 +1,30 @@
+{
+  "rewrites": [
+    {
+      "source": "/concentrator",
+      "destination": "/concentrator/index.html"
+    },
+    {
+      "source": "/concentrator/",
+      "destination": "/concentrator/index.html"
+    },
+    {
+      "source": "/concentrator/(.*)",
+      "destination": "/concentrator/index.html"
+    },
+
+    {
+      "source": "/oraculux",
+      "destination": "/oraculux/index.html"
+    },
+    {
+      "source": "/oraculux/(.*)",
+      "destination": "/oraculux/$1"
+    },
+
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

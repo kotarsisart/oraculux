@@ -1,0 +1,76 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --form-description-320: 18px;
+  --form-description-768: 22px;
+  --form-description-1280: 26px;
+
+  --form-placeholder-320: 16px;
+  --form-placeholder-768: 20px;
+
+  --form-response-320: 20px;
+  --form-response-360: 24px;
+  --form-response-768: 28px;
+  --form-response-1024: 36px;
+
+  --form-warning-320: 14px;
+  --form-warning-768: 16px;
+  --form-warning-1024: 20px;
+}
+
+@mixin form-description {
+  font-size: var(--form-description-320);
+  letter-spacing: 0.1em;
+  color: var(--text-form-description);
+
+  @include mx.mq(break-768) {
+    font-size: var(--form-description-768);
+    letter-spacing: 0.3em;
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--form-description-1280);
+  }
+}
+
+@mixin form-placeholder {
+  font-size: var(--form-placeholder-320);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+
+  @include mx.mq(break-768) {
+    font-size: var(--form-placeholder-768);
+  }
+}
+
+@mixin form-response {
+  font-size: var(--form-response-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-360) {
+    font-size: var(--form-response-360);
+  }
+  @include mx.mq(break-768) {
+    font-size: var(--form-response-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--form-response-1024);
+  }
+}
+
+@mixin form-warning {
+  font-size: var(--form-warning-320);
+  font-family: var(--font-primary);
+  color: var(--text-primary);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-768) {
+    font-size: var(--form-warning-768);
+    white-space: nowrap;
+  }
+
+  @include mx.mq(break-1024) {
+    font-size: var(--form-warning-1024);
+  }
+}

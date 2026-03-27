@@ -1,0 +1,36 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --constellation-subline-320: 14px;
+  --constellation-subline-430: 16px;
+  --constellation-subline-1024: 20px;
+  --constellation-subline-1280: 22px;
+
+  --constellation-hover-description-320: 14px;
+}
+
+@mixin constellation-subline {
+  font-size: var(--constellation-subline-320);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.1em;
+  color: var(--text-subline);
+
+  @include mx.mq(break-430) {
+    font-size: var(--constellation-subline-430);
+    letter-spacing: 0.3em;
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--constellation-subline-1024);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--constellation-subline-1280);
+  }
+}
+
+@mixin constellation-hover-description {
+  font-size: var(--constellation-hover-description-320);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-constellation-description)
+}

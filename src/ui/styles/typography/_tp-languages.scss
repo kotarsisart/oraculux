@@ -1,0 +1,45 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --lang-page-lang-320: 18px;
+
+  --lang-page-geography-320: 22px;
+  --lang-page-geography-390: 26px;
+
+  --lang-page-internal-320: 20px;
+  --lang-page-internal-390: 22px;
+
+  --lang-page-close-320: 60px;
+}
+
+@mixin lang-page-lang {
+  font-size: var(--lang-page-lang-320);
+  font-weight: var(--font-weight-semibold);
+}
+
+@mixin lang-page-geography {
+  font-size: var(--lang-page-geography-320);
+  font-weight: var(--font-weight-bold);
+  
+  @include mx.mq(break-390) {
+    font-size: var(--lang-page-geography-390);
+  }
+}
+
+@mixin lang-page-internal {
+  font-size: var(--lang-page-internal-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-390) {
+    font-size: var(--lang-page-internal-390);
+  }
+}
+
+@mixin lang-page-close {
+  font-family: "Playfair Display SC", "Manrope Variable", serif;;
+  font-size: var(--lang-page-close-320);
+  font-weight: var(--font-weight-medium);
+  line-height: 50%;
+}

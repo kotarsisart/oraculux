@@ -1,0 +1,118 @@
+@use '../../styles/system/mixins' as mx;
+@use '../../styles/typography/index' as tp;
+@use '../../styles/tokens/spacing' as s;
+
+.preloader {
+  @include mx.centered;
+  @include mx.preloader-bg;
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  opacity: 1;
+  transition: opacity 1s ease;
+
+  &--hide {
+    opacity: 0;
+    pointer-events: none;
+    filter: blur(20px);
+  }
+
+  &__content {
+    @include mx.centered;
+    flex-direction: column;
+    gap: 24px;
+    padding-inline: s.$space-xs;
+    width: 100%;
+
+    @include mx.mq(break-390) {
+      padding-inline: s.$space-l;
+    }
+  }
+
+  &__kotarsis {
+    @include mx.centered;
+    flex-direction: column;
+
+    &-icon {
+      width: 90px;
+      opacity: 0;
+
+      @include mx.mq(break-768) {
+        width: 120px;
+      }
+    }
+
+    &-title {
+      @include tp.preloader-kotarsis;
+      opacity: 0;
+    }
+  }
+
+  &__divider {
+    width: 0%;
+    max-width: 800px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: var(--preloader-divider);
+    opacity: 0;
+    box-shadow:
+      var(--shadow-preloader-first),
+      var(--shadow-preloader-second);
+    animation: divider-grow 2s ease forwards;
+    animation-delay: 0.7s;
+  }
+
+  &__presents {
+    @include tp.preloader-presents;
+    opacity: 0;
+  }
+
+  &__project {
+    @include mx.centered;
+    flex-direction: row;
+    gap: s.$space-s;
+
+    &-icon {
+      width: 70px;
+      opacity: 0;
+      filter: drop-shadow(0 0 8px rgba(194,136,255,0.4));
+
+      @include mx.mq(break-768) {
+        width: 90px;
+      }
+    }
+
+    &-title {
+      @include tp.preloader-project;
+      opacity: 0;
+      min-height: 10px;
+    }
+  }
+}
+
+.fade-up-1 { animation: fadeUp 0.8s ease forwards; }
+.fade-up-2 { animation: fadeUp 0.8s ease forwards; }
+.fade-up-3 { animation: fadeUp 0.8s ease forwards; }
+.fade-up-4 { animation: fadeUp 0.8s ease forwards; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up-1 { animation-delay: 0.5s; }
+.fade-up-2 { animation-delay: 0.7s; }
+.fade-up-3 { animation-delay: 0.9s; }
+.fade-up-4 { animation-delay: 1.1s; }
+
+
+@keyframes divider-grow {
+  from { width: 0%; opacity: 0; }
+  to { width: 100%; opacity: 1; }
+}

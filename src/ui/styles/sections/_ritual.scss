@@ -1,0 +1,164 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.ritual {
+  @include mx.ritual-bg;
+  @include mx.centered;
+
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  padding-block: s.$space-xl;
+  gap: s.$space-xl;
+
+  &__title {
+    @include tp.h2;
+    color: var(--text-purple-title);
+  }
+
+  &__description {
+    @include tp.ritual-description;
+    text-align: center;
+    padding-inline: s.$space-xs;
+  }
+
+  &__carousel {
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: s.$space-l;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  
+    @include mx.mq(break-768) {
+      width: 100%;
+      height: 680px;
+      overflow: visible;
+      @include mx.centered;
+      padding: 0;
+    }
+  
+    &-track {
+      display: flex;
+      gap: s.$space-l;
+      width: max-content;
+      padding-inline: s.$space-m;
+      position: relative;
+  
+      @include mx.mq(break-768) {
+        width: 670px;
+        height: 670px;
+        position: relative;
+        border-radius: 50%;
+        transform-origin: center;
+        overflow: visible;
+        clip-path: none;
+      }
+    }
+  }
+
+  &__circle {
+    @include mx.centered;
+    width: var(--ritual-circle-diameter-320);
+    height: var(--ritual-circle-diameter-320);
+    padding: s.$space-m;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  
+    box-shadow: var(--shadow-3d);
+    transition: background 0.8s ease;
+  
+    @include mx.mq(break-768) {
+      width: var(--ritual-circle-diameter-768);
+      height: var(--ritual-circle-diameter-768);
+      position: absolute;
+    }
+  
+    &[data-state='question'] {
+      background: var(--ritual-circle-bg-default);
+    }
+  
+    &[data-state='hover'] {
+      background: var(--ritual-circle-bg-hover);
+    }
+  
+    &[data-state='scanning'],
+    &[data-state='waiting'] {
+      background: var(--ritual-circle-bg-waiting);
+    }
+  
+    &[data-state='answer'] {
+      background: var(--ritual-circle-bg-answer);
+      transition: background 2s ease, box-shadow 0.6s ease;
+      box-shadow: var(--shadow-ritual-answer);
+    }
+  
+    &[data-state='question'] &-text--question {
+      opacity: 1;
+    }
+
+    &[data-state='hover'] &-text--hover {
+      opacity: 1;
+    }
+
+    &[data-state='scanning'] &-text--scanning {
+      opacity: 1;
+      transition: opacity 0.8s ease;
+    }
+
+    &[data-state='waiting'] &-text {
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    &[data-state='answer'] &-text--answer {
+      opacity: 1;
+      transition: opacity 3s ease;
+    }
+
+    &-inner {
+      @include mx.centered;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      padding: s.$space-m;
+      transform-style: preserve-3d;
+    }
+  
+    &-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      // pointer-events: none;
+      transition: opacity 0.6s ease;
+  
+      &--question {
+        @include tp.ritual-circle-question;
+      }
+  
+      &--hover {
+        @include tp.ritual-circle-call;
+      }
+  
+      &--scanning {
+        @include tp.ritual-circle-scanning;
+      }
+  
+      &--answer {
+        @include tp.ritual-circle-answer;
+      }
+    }
+  }
+}
+

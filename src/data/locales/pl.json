@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "title": "Oraculux — Wielojęzyczna Wyrocznia, która odpowiada tam, gdzie logika zawodzi",
+    "description": "Oraculux — wielojęzyczna wyrocznia, która odpowiada tam, gdzie logika milknie. Zadaj pytanie i otrzymaj symboliczną, intuicyjną odpowiedź.",
+    "keywords": "oraculux, wyrocznia, przewidywanie, mistyczne odpowiedzi, intuicja, duchowe wskazówki, kosmiczna wyrocznia",
+    "siteName": "Oraculux"
+  },
+
+  "header": {
+    "logo": {
+      "oraculuxAlt": "logo Oraculux",
+      "kotarsisAlt": "logo Kotarsis"
+    }
+  },
+
+  "hero": {
+    "title": "Oraculux wie to, o czym nawet nie pomyślałeś",
+    "subline": "Naciśnij. Albo nie naciskaj...",
+    "button": "Nawiąż kontakt",
+
+    "modal": {
+      "text": "Nie spodziewałem się, że klikniesz... Większość tylko przewija.\nA ty — coś poczułeś.\nPorozmawiamy?",
+      "button": "Napisz do Wyroczni"
+    }
+  },
+
+  "benefits": {
+    "title": "Co sprawia, że Oraculux jest nieunikniony",
+    "description": "Nie obiecujemy — przewidujemy. Dlatego nam ufają:",
+
+    "cards": [
+      {
+        "title": "Zatwierdzone przez duchy",
+        "description": "„Certyfikowane przez szamanów. Sprawdzone podwójnym mrugnięciem.”"
+      },
+      {
+        "title": "Starożytna mądrość",
+        "description": "„Wieki wiedzy. Użyte. Sprawdzone. Oraculuxowane.”"
+      },
+      {
+        "title": "Nonsens, który ma sens",
+        "description": "„Przepowiednie bez logiki są najbardziej prawdziwe”"
+      },
+      {
+        "title": "Nawet AI tego nie rozumie",
+        "description": "„AI nie pomoże wszędzie, ale Oraculux może…”"
+      }
+    ]
+  },
+
+  "hiw": {
+    "title": "Energetyczna droga twojego pytania",
+    "quote": "„Energia nie kłamie. Interpretacja jest nieunikniona.”",
+
+    "steps": [
+      {
+        "title": "Użytkownik wysyła impuls",
+        "hover": "„Fale mózgowe 3.3Hz. Intencja to wszystko.”"
+      },
+      {
+        "title": "Kwantowe tłumaczenie",
+        "hover": "„Intencja wibruje przez astralno-językową warstwę.”"
+      },
+      {
+        "title": "Duchowe przekierowanie",
+        "hover": "„Przesłano przez Węzły Źródła. Droga wybrana.”"
+      },
+      {
+        "title": "Wstępne odkodowanie",
+        "hover": "„Paradoks rozwiązany. Sens się zbiega.”"
+      },
+      {
+        "title": "Odpowiedź Wyroczni",
+        "hover": "„Jasność osiągnięta. Odpowiedź przyciągnięta do pytającego.”"
+      }
+    ]
+  },
+
+  "ritual": {
+    "title": "Zapytaj Wyrocznię",
+    "description": "Znajdź odpowiedź na pytanie, które cię nurtuje.",
+    "hover": "Przywołaj odpowiedź",
+    "scanning": "Skanowanie astralnego pola..."
+  },
+
+  "oracle": {
+    "whenFindLove": {
+      "question": "Kiedy znajdę swoją miłość?",
+      "answers": [
+        "Gdy przestaniesz szukać",
+        "Wkrótce. Bardzo wkrótce",
+        "Gotowy?",
+        "Ona to ty"
+      ]
+    },
+
+    "whenKnowWant": {
+      "question": "Kiedy dowiem się, czego naprawdę chcę?",
+      "answers": [
+        "Gdy zmęczy cię udawanie",
+        "Odpowiedź przyjdzie w ciszy",
+        "Jesteś pewien, że chcesz to wiedzieć?",
+        "Za późno, by nie chcieć prawdy"
+      ]
+    },
+
+    "keepPuttingOff": {
+      "question": "Dlaczego wciąż to odkładam?",
+      "answers": [
+        "Bo boisz się zrobić to naprawdę",
+        "Czas jeszcze nie jest gotowy",
+        "Teraz to czytasz — już nie odkładasz",
+        "Jesteś człowiekiem, nie budzikiem"
+      ]
+    },
+
+    "whatAhead": {
+      "question": "Co czeka mnie dalej?",
+      "answers": [
+        "To, co zbudujesz",
+        "Nieskończone „może”",
+        "Kawa i dziwne przypadki",
+        "Chcesz spoiler?"
+      ]
+    },
+
+    "whyDoingThis": {
+      "question": "Dlaczego to wszystko robię?",
+      "answers": [
+        "Bo inaczej nie potrafisz",
+        "By pewnego dnia zrozumieć",
+        "Po prostu lubisz dramat",
+        "Ktoś musi to robić"
+      ]
+    },
+
+    "rightTrack": {
+      "question": "Czy jestem na właściwej drodze?",
+      "answers": [
+        "Jeśli cię to niepokoi — tak",
+        "Drogi nie ma, dopóki nie idziesz",
+        "A jeśli to krąg?",
+        "Stworzyłeś to — więc jest twoje"
+      ]
+    },
+
+    "whenBetter": {
+      "question": "Kiedy będzie lepiej?",
+      "answers": [
+        "Gdy przestaniesz czekać",
+        "Po chaosie przychodzi jasność",
+        "Będzie, ale nie zauważysz",
+        "Wczoraj. Sprawdź e-mail"
+      ]
+    },
+
+    "whatDoLife": {
+      "question": "Co mam zrobić ze swoim życiem?",
+      "answers": [
+        "Zacznij od małego — i nie przestawaj",
+        "Podążaj za wewnętrznym szumem",
+        "Pomyśl po obiedzie",
+        "Pogłaszcz najbliższego kota"
+      ]
+    }
+  },
+
+  "form": {
+    "title": "Powiedz — a zostaniesz wysłuchany",
+    "description": "„Wyrocznia słucha tylko wtedy, gdy cisza pęka.”",
+
+    "inputs": {
+      "name": "znają cię jako…",
+      "email": "ścieżka@email.com",
+      "question": "tu drży twoje pytanie..."
+    },
+
+    "button": {
+      "default": "Zapytaj Wyrocznię",
+      "sending": "Niesiemy do gwiazd"
+    },
+
+    "response": "Twoja wiadomość została wysłana. Czekaj na odpowiedź",
+
+    "error": {
+      "invalidEmail": "Nawet gwiazdy nie mylą kropek i @...",
+      "shortName": "Wyrocznia potrzebuje imienia...",
+      "emptyQuestion": "Wyrocznia przewiduje, ale ciszy nie słyszy.",
+      "server": "Coś poszło nie tak.",
+      "network": "Brak połączenia z Wyrocznią."
+    },
+
+    "alt": {
+      "eye": "oko Oraculux",
+      "portalSvg": "portal astralny",
+      "successIcon": "sukces",
+      "warningIcon": "błąd"
+    }
+  },
+
+  "constellationMap": {
+    "title": "Wiadomości zapisane w gwiazdach",
+    "subline": "Każda konstelacja szepcze swoją prawdę.",
+
+    "signs": {
+      "aquarius": "Wodnik",
+      "capricorn": "Koziorożec",
+      "gemini": "Bliźnięta",
+      "leo": "Lew",
+      "virgo": "Panna",
+      "scorpio": "Skorpion",
+      "taurus": "Byk",
+      "libra": "Waga",
+      "sagittarius": "Strzelec",
+      "pisces": "Ryby",
+      "cancer": "Rak",
+      "aries": "Baran"
+    },
+
+    "alt": {
+      "aquarius": "konstelacja Wodnika",
+      "capricorn": "konstelacja Koziorożca",
+      "gemini": "konstelacja Bliźniąt",
+      "leo": "konstelacja Lwa",
+      "virgo": "konstelacja Panny",
+      "scorpio": "konstelacja Skorpiona",
+      "taurus": "konstelacja Byka",
+      "libra": "konstelacja Wagi",
+      "sagittarius": "konstelacja Strzelca",
+      "pisces": "konstelacja Ryb",
+      "cancer": "konstelacja Raka",
+      "aries": "konstelacja Barana"
+    },
+
+    "desc": {
+      "aquarius": ["Wodnik", "idee, przyszłość, jasność"],
+      "capricorn": ["Koziorożec", "sukces, szczęście, myśl"],
+      "gemini": ["Bliźnięta", "wybór, umysł, dualność"],
+      "leo": ["Lew", "duma, pasja, sława"],
+      "virgo": ["Panna", "porządek, fokus, logika"],
+      "scorpio": ["Skorpion", "głębia, zmiana, pragnienie"],
+      "taurus": ["Byk", "komfort, dobrobyt, korzenie"],
+      "libra": ["Waga", "równowaga, piękno, prawda"],
+      "sagittarius": ["Strzelec", "droga, ruch, wizja"],
+      "pisces": ["Ryby", "sny, uczucia, dusza"],
+      "cancer": ["Rak", "dom, troska, serce"],
+      "aries": ["Baran", "siła, energia, ryzyko"]
+    }
+  },
+
+  "graffiti": {
+    "1": "„Spróbuj wyłączyć i włączyć.”",
+    "2": "„Nie byli z tobą szczerzy.”",
+    "3": "„To zależy od trzeciego kamienia.”",
+    "4": "„Jeszcze nie czas… ale wkrótce.”",
+
+    "5": "„Byli z ciebie dumni.”",
+    "6": "„Nie będzie łatwo… ale warto.”",
+    "7": "„Zrozumiesz, gdy tam dojdziesz.”",
+    "8": "„Dokonałeś właściwego wyboru.”",
+
+    "9": "„Trzeba było słuchać.”",
+    "10": "„Odważne. Wątpliwe, ale odważne.”",
+    "11": "„Nawet ja nie wiem, co to znaczy.”",
+    "12": "„Zauważył.”",
+    "13": "„Nie powinieneś tego widzieć.”",
+    "14": "„Uważaj na ciszę, która łatwo się zgadza.”",
+    "15": "„Znasz już odpowiedź.”",
+
+    "16": "„Lustro skłamało.”",
+    "17": "„Wciąż o tobie myślą.”",
+    "18": "„Tak. Nie. Może. Zapytaj bez Merkurego.”",
+    "19": "„Już za późno.”",
+    "20": "„Nie po tym, jak zmieniła się rzeka.”",
+
+    "21": "„Ktoś wciąż czeka.”",
+    "22": "„Pytasz niewłaściwy wymiar.”",
+    "23": "„Nie miałeś tego wiedzieć.”",
+
+    "errorDefault": "Błąd 404: jasność nieznaleziona.",
+    "errorHover": "System restartuje świadomość"
+  },
+
+  "footer": {
+    "nav": {
+      "ask": "Zapytaj Wyrocznię",
+      "commonQuestion": "Najczęstsze pytanie",
+      "sources": "Źródła odpowiedzi"
+    },
+
+    "me": {
+      "author": "Autor: kotarsis_art",
+      "buyCoffee": "Wesprzeć Wyrocznię kawą",
+      "telegram": "Telegram",
+      "customSite": "Zamówić stronę"
+    },
+
+    "about": {
+      "handcrafted": "🔮 Stworzone w cieniu gwiazd",
+      "noAiHarmed": "✨ Żadna AI nie ucierpiała podczas tworzenia proroctwa"
+    },
+
+    "copyright": {
+      "main": "© 2025 Oraculux — Czuwa zawsze",
+      "alt": "© Oraculux — Zaufaj niewidzialnemu"
+    },
+
+    "easterEgg": "Portal nadal otwarty.",
+
+    "alt": {
+      "coffee": "filiżanka kawy"
+    }
+  }
+}

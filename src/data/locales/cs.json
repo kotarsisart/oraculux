@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "title": "Oraculux — Mnohojazyčné Orákulum, které odpovídá tam, kde logika selže",
+    "description": "Oraculux — mnohojazyčné orákulum, které odpovídá tam, kde logika mlčí. Polož otázku a přijmi symbolickou, intuitivní odpověď.",
+    "keywords": "oraculux, orákulum, předpověď, intuice, mystické odpovědi, kosmické poselství, duchovní vedení",
+    "siteName": "Oraculux"
+  },
+
+  "header": {
+    "logo": {
+      "oraculuxAlt": "logo Oraculux",
+      "kotarsisAlt": "logo Kotarsis"
+    }
+  },
+
+  "hero": {
+    "title": "Oraculux ví to, na co jsi ani nepomyslel",
+    "subline": "Stiskni. Nebo nestiskni...",
+    "button": "Navázat kontakt",
+
+    "modal": {
+      "text": "Nečekal jsem, že klikneš... Většina jen projede dolů.\nAle ty — něco jsi ucítil.\nPromluvíme si?",
+      "button": "Napsat Orákulu"
+    }
+  },
+
+  "benefits": {
+    "title": "Proč je Oraculux nevyhnutelný",
+    "description": "Neslibujeme — předpovídáme. Proto nám věří:",
+
+    "cards": [
+      {
+        "title": "Duchovně certifikováno",
+        "description": "„Certifikováno šamany. Otestováno dvojím mrknutím.“"
+      },
+      {
+        "title": "Starověká moudrost",
+        "description": "„Staletí poznání. Použito. Ověřeno. Oraculuxováno.“"
+      },
+      {
+        "title": "V absurditě je smysl",
+        "description": "„Předpovědi bez logiky jsou ty nejskutečnější“"
+      },
+      {
+        "title": "Ani AI to nechápe",
+        "description": "„AI nepomůže vždy, ale Oraculux může…“"
+      }
+    ]
+  },
+
+  "hiw": {
+    "title": "Energetická cesta tvé otázky",
+    "quote": "„Energie nelže. Výklad je nevyhnutelný.“",
+
+    "steps": [
+      {
+        "title": "Uživatel vyšle impuls",
+        "hover": "„Mozkové vlny 3.3Hz. Záměr je vše.“"
+      },
+      {
+        "title": "Kvantová předpřeklad",
+        "hover": "„Záměr vibruje skrz astrálně-jazykovou vrstvu.“"
+      },
+      {
+        "title": "Duchovní směrování",
+        "hover": "„Přesměrováno skrze Uzly Zdroje. Cesta zvolena.“"
+      },
+      {
+        "title": "Předběžné rozluštění",
+        "hover": "„Paradox vyřešen. Smysl se spojuje.“"
+      },
+      {
+        "title": "Odpověď Orákula",
+        "hover": "„Jasnost dosažena. Výstup přitažen k tazateli.“"
+      }
+    ]
+  },
+
+  "ritual": {
+    "title": "Zeptej se Orákula",
+    "description": "Najdi odpověď na otázku, která tě pálí.",
+    "hover": "Vyvolat odpověď",
+    "scanning": "Skenování astrálního pole..."
+  },
+
+  "oracle": {
+    "whenFindLove": {
+      "question": "Kdy najdu svou lásku?",
+      "answers": [
+        "Až přestaneš hledat",
+        "Brzy. Velmi brzy",
+        "Připraven?",
+        "Ona jsi ty"
+      ]
+    },
+
+    "whenKnowWant": {
+      "question": "Kdy zjistím, co opravdu chci?",
+      "answers": [
+        "Až tě unaví předstírání",
+        "Odpověď přijde v tichu",
+        "Jsi si jistý, že to chceš vědět?",
+        "Pozdě nechtít pravdu"
+      ]
+    },
+
+    "keepPuttingOff": {
+      "question": "Proč to pořád odkládám?",
+      "answers": [
+        "Protože se bojíš to udělat doopravdy",
+        "Čas ještě není připraven",
+        "Teď to čteš — už to neodkládáš",
+        "Jsi člověk, ne budík"
+      ]
+    },
+
+    "whatAhead": {
+      "question": "Co mě čeká dál?",
+      "answers": [
+        "To, co vybuduješ",
+        "Nekonečné „možná“",
+        "Káva a zvláštní náhody",
+        "Chceš spoiler?"
+      ]
+    },
+
+    "whyDoingThis": {
+      "question": "Proč to všechno dělám?",
+      "answers": [
+        "Protože jinak nemůžeš",
+        "Aby sis to jednou uvědomil",
+        "Máš rád drama",
+        "Někdo to dělat musí"
+      ]
+    },
+
+    "rightTrack": {
+      "question": "Jdu správnou cestou?",
+      "answers": [
+        "Pokud tě to znepokojuje — ano",
+        "Cesta neexistuje, dokud nejdeš",
+        "A co když je to kruh?",
+        "Vytvořil jsi to — je to tvoje"
+      ]
+    },
+
+    "whenBetter": {
+      "question": "Kdy bude lépe?",
+      "answers": [
+        "Až přestaneš čekat",
+        "Po chaosu přichází jasnost",
+        "Bude, ale nevšimneš si",
+        "Včera. Zkontroluj e-mail"
+      ]
+    },
+
+    "whatDoLife": {
+      "question": "Co mám dělat se svým životem?",
+      "answers": [
+        "Začni maličkostí — a nepřestávej",
+        "Následuj vnitřní šum",
+        "Přemýšlej po obědě",
+        "Pohlaď nejbližší kočku"
+      ]
+    }
+  },
+
+  "form": {
+    "title": "Promluv — a budeš vyslyšen",
+    "description": "„Orákulum poslouchá jen tehdy, když ticho praská.“",
+
+    "inputs": {
+      "name": "znají tě jako…",
+      "email": "cesta@email.com",
+      "question": "tvá otázka se tu chvěje..."
+    },
+
+    "button": {
+      "default": "Zeptej se Orákula",
+      "sending": "Neseme ke hvězdám"
+    },
+
+    "response": "Tvá zpráva odeslána. Čekej odpověď",
+
+    "error": {
+      "invalidEmail": "Ani hvězdy nepletou tečky a @...",
+      "shortName": "Orákulum potřebuje jméno...",
+      "emptyQuestion": "Orákulum věští, ale ticho neslyší.",
+      "server": "Něco se pokazilo.",
+      "network": "Nelze se spojit s Orákulem."
+    },
+
+    "alt": {
+      "eye": "oko Oraculux",
+      "portalSvg": "astrální portál",
+      "successIcon": "úspěch",
+      "warningIcon": "chyba"
+    }
+  },
+
+  "constellationMap": {
+    "title": "Vzkazy zapsané ve hvězdách",
+    "subline": "Každé souhvězdí šeptá svou pravdu.",
+
+    "signs": {
+      "aquarius": "Vodnář",
+      "capricorn": "Kozoroh",
+      "gemini": "Blíženci",
+      "leo": "Lev",
+      "virgo": "Panna",
+      "scorpio": "Štír",
+      "taurus": "Býk",
+      "libra": "Váhy",
+      "sagittarius": "Střelec",
+      "pisces": "Ryby",
+      "cancer": "Rak",
+      "aries": "Beran"
+    },
+
+    "alt": {
+      "aquarius": "souhvězdí Vodnáře",
+      "capricorn": "souhvězdí Kozoroha",
+      "gemini": "souhvězdí Blíženců",
+      "leo": "souhvězdí Lva",
+      "virgo": "souhvězdí Panny",
+      "scorpio": "souhvězdí Štíra",
+      "taurus": "souhvězdí Býka",
+      "libra": "souhvězdí Vah",
+      "sagittarius": "souhvězdí Střelce",
+      "pisces": "souhvězdí Ryb",
+      "cancer": "souhvězdí Raka",
+      "aries": "souhvězdí Berana"
+    },
+
+    "desc": {
+      "aquarius": ["Vodnář", "nápady, budoucnost, jasno"],
+      "capricorn": ["Kozoroh", "úspěch, štěstí, myšlení"],
+      "gemini": ["Blíženci", "volba, mysl, dualita"],
+      "leo": ["Lev", "pýcha, vášeň, sláva"],
+      "virgo": ["Panna", "řád, fokus, logika"],
+      "scorpio": ["Štír", "hloubka, změna, touha"],
+      "taurus": ["Býk", "komfort, blahobyt, kořeny"],
+      "libra": ["Váhy", "rovnováha, krása, pravda"],
+      "sagittarius": ["Střelec", "cesta, pohyb, vize"],
+      "pisces": ["Ryby", "sny, pocity, duše"],
+      "cancer": ["Rak", "domov, péče, srdce"],
+      "aries": ["Beran", "síla, energie, risk"]
+    }
+  },
+
+  "graffiti": {
+    "1": "„Zkus vypnout a zapnout.“",
+    "2": "„Nebyli s tebou upřímní.“",
+    "3": "„Záleží to na třetím kameni.“",
+    "4": "„Ještě ne… ale brzy.“",
+
+    "5": "„Byli na tebe hrdí.“",
+    "6": "„Nebude to lehké… ale stojí to za to.“",
+    "7": "„Pochopíš, až tam dojdeš.“",
+    "8": "„Udělal jsi správnou volbu.“",
+
+    "9": "„Měl jsi poslouchat.“",
+    "10": "„Odvážné. Pochybné, ale odvážné.“",
+    "11": "„Ani já nevím, co to znamená.“",
+    "12": "„Všiml si toho.“",
+    "13": "„Neměl jsi to vidět.“",
+    "14": "„Pozor na ticho, co příliš snadno souhlasí.“",
+    "15": "„Odpověď už znáš.“",
+
+    "16": "„Zrcadlo lhalo.“",
+    "17": "„Pořád na tebe myslí.“",
+    "18": "„Ano. Ne. Možná. Zeptej se bez Merkura.“",
+    "19": "„Už je příliš pozdě.“",
+    "20": "„Ne po tom, co se změnila řeka.“",
+
+    "21": "„Někdo pořád čeká.“",
+    "22": "„Ptáš se špatného rozměru.“",
+    "23": "„Neměl jsi to vědět.“",
+
+    "errorDefault": "Chyba 404: jasno nenalezeno.",
+    "errorHover": "Systém restartuje vědomí"
+  },
+
+  "footer": {
+    "nav": {
+      "ask": "Zeptej se Orákula",
+      "commonQuestion": "Nejčastější otázka",
+      "sources": "Zdroje odpovědí"
+    },
+
+    "me": {
+      "author": "Autor: kotarsis_art",
+      "buyCoffee": "Podpořit Orákulum kávou",
+      "telegram": "Telegram",
+      "customSite": "Objednat web"
+    },
+
+    "about": {
+      "handcrafted": "🔮 Vytvořeno ve stínu hvězd",
+      "noAiHarmed": "✨ Žádná AI nebyla poškozena při tvorbě proroctví"
+    },
+
+    "copyright": {
+      "main": "© 2025 Oraculux — Sleduje vždy",
+      "alt": "© Oraculux — Důvěřuj neviditelnému"
+    },
+
+    "easterEgg": "Portál je stále otevřen.",
+
+    "alt": {
+      "coffee": "šálek kávy"
+    }
+  }
+}

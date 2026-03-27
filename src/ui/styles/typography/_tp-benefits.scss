@@ -1,0 +1,57 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --benefits-description-320: 16px;
+  --benefits-description-768: 18px;
+  --benefits-description-1024: 22px;
+
+  --benefits-card-title-320: 22px;
+  --benefits-card-title-1024: 24px;
+  --benefits-card-title-1440: 28px;
+
+  --benefits-card-description-320: 14px;
+  --benefits-card-description-390: 16px;
+  --benefits-card-description-1440: 18px;
+}
+
+@mixin benefits-description {
+  font-size: var(--benefits-description-320);
+  letter-spacing: 0.05em;
+
+  @include mx.mq(break-768) {
+    font-size: var(--benefits-description-768);
+    letter-spacing: 0.1em;
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--benefits-description-1024);
+    letter-spacing: 0.2em;
+  }
+}
+
+@mixin benefits-card-title {
+  font-size: var(--benefits-card-title-320);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-benefits-title);
+
+  @include mx.mq(break-1024) {
+    font-size: var(--benefits-card-title-1024);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--benefits-card-title-1440);
+  }
+}
+
+@mixin benefits-card-description {
+  font-size: var(--benefits-card-description-320);
+  font-weight: var(--font-weight-medium);
+
+  @include mx.mq(break-390) {
+    font-size: var(--benefits-card-description-390);
+  }
+
+  @include mx.mq(break-1440) {
+    font-size: var(--benefits-card-description-1440);
+  }
+}

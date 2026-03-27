@@ -1,0 +1,14 @@
+export const FORM_ANIM = {
+  // portal rotation
+  ACCEL_SPEED: 5,
+  ACCEL_DURATION: 3000,
+
+  // vanish
+  DELAY_BEFORE_VANISH: 3000,
+  VANISH_DURATION: 3000,
+
+  // portal reappear
+  RETURNING_DELAY: 500,
+  REAPPEAR_DELAY: 200,
+  REVERSE_SPIN_DURATION: 3000,
+};

@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "title": "Oraculux — Višejezični Orakul koji odgovara tamo gdje logika šuti",
+    "description": "Oraculux — višejezični orakul koji odgovara tamo gdje logika staje. Postavite pitanje i primite simboličan, intuitivan odgovor.",
+    "keywords": "oraculux, orakul, proročanstvo, intuicija, mistični odgovori, kozmicka poruka, duhovno vodstvo",
+    "siteName": "Oraculux"
+  },
+
+  "header": {
+    "logo": {
+      "oraculuxAlt": "logo Oraculux",
+      "kotarsisAlt": "logo Kotarsis"
+    }
+  },
+
+  "hero": {
+    "title": "Oraculux zna ono o čemu nisi ni razmišljao",
+    "subline": "Pritisni. Ili nemoj...",
+    "button": "Započni kontakt",
+
+    "modal": {
+      "text": "Nisam očekivao da ćeš kliknuti... Većina samo prođe.\nAli ti — nešto si osjetio.\nHoćemo li razgovarati?",
+      "button": "Pošalji poruku Orakulu"
+    }
+  },
+
+  "benefits": {
+    "title": "Zašto je Oraculux neizbježan",
+    "description": "Ne obećavamo — predviđamo. Zato nam vjeruju:",
+
+    "cards": [
+      {
+        "title": "Potvrđeno od duhova",
+        "description": "„Potvrđeno od šamana. Testirano dvostrukim treptajem.“"
+      },
+      {
+        "title": "Vjekovnu mudrost",
+        "description": "„Stoljeća znanja. Korišteno. Provjereno. Orakuluksirano.“"
+      },
+      {
+        "title": "Besmisao ima smisla",
+        "description": "„Predviđanja bez logike najstvarnija su“"
+      },
+      {
+        "title": "Čak ni AI ne razumije",
+        "description": "„AI ne pomaže u svemu, ali Oraculux može…“"
+      }
+    ]
+  },
+
+  "hiw": {
+    "title": "Energetsko putovanje tvojeg pitanja",
+    "quote": "„Energija ne laže. Tumačenje je neizbježno.“",
+
+    "steps": [
+      {
+        "title": "Korisnik šalje impuls",
+        "hover": "„Moždani valovi 3.3Hz. Namjera je sve.“"
+      },
+      {
+        "title": "Kvantni pred-prijevod",
+        "hover": "„Namjera vibrira kroz astralno-jezični sloj.“"
+      },
+      {
+        "title": "Duhovno usmjeravanje",
+        "hover": "„Preusmjereno kroz Izvorne Čvorove. Put odabran.“"
+      },
+      {
+        "title": "Preliminarno dešifriranje",
+        "hover": "„Paradox riješen. Značenje se skuplja.“"
+      },
+      {
+        "title": "Odgovor Orakula",
+        "hover": "„Jasnoća postignuta. Odgovor privučen tragaču.“"
+      }
+    ]
+  },
+
+  "ritual": {
+    "title": "Pitaj Orakula",
+    "description": "Pronađi odgovor na pitanje koje te muči.",
+    "hover": "Prizovi odgovor",
+    "scanning": "Skeniranje astralnog polja..."
+  },
+
+  "oracle": {
+    "whenFindLove": {
+      "question": "Kada ću pronaći svoju ljubav?",
+      "answers": [
+        "Kad prestaneš tražiti",
+        "Uskoro. Vrlo uskoro",
+        "Jesi li spreman?",
+        "To si ti"
+      ]
+    },
+
+    "whenKnowWant": {
+      "question": "Kada ću znati što zaista želim?",
+      "answers": [
+        "Kad se umoriš od pretvaranja",
+        "Odgovor dolazi u tišini",
+        "Siguran da želiš znati?",
+        "Kasno je da ne želiš istinu"
+      ]
+    },
+
+    "keepPuttingOff": {
+      "question": "Zašto stalno odgađam?",
+      "answers": [
+        "Jer te strah učiniti to stvarno",
+        "Vrijeme još nije spremno",
+        "Čitaš ovo — ne odgađaš",
+        "Čovjek si, ne alarm"
+      ]
+    },
+
+    "whatAhead": {
+      "question": "Što me čeka naprijed?",
+      "answers": [
+        "Ono što izgradiš",
+        "Beskonačno „možda“",
+        "Kava i čudne slučajnosti",
+        "Želiš spoiler?"
+      ]
+    },
+
+    "whyDoingThis": {
+      "question": "Zašto radim sve ovo?",
+      "answers": [
+        "Jer drugačije ne možeš",
+        "Da to jednog dana shvatiš",
+        "Voliš dramatiku",
+        "Netko to mora raditi"
+      ]
+    },
+
+    "rightTrack": {
+      "question": "Jesam li na pravom putu?",
+      "answers": [
+        "Ako te uznemiruje — da",
+        "Puta nema dok ne kreneš",
+        "A ako je krug?",
+        "Stvorio si ga — tvoj je"
+      ]
+    },
+
+    "whenBetter": {
+      "question": "Kada će biti bolje?",
+      "answers": [
+        "Kad prestaneš očekivati",
+        "Nakon kaosa dolazi jasnoća",
+        "Bit će, ali nećeš primijetiti",
+        "Jučer. Provjeri mail"
+      ]
+    },
+
+    "whatDoLife": {
+      "question": "Što da radim sa svojim životom?",
+      "answers": [
+        "Počni malim — i ne staj",
+        "Prati unutarnji šum",
+        "Razmisli nakon ručka",
+        "Pomazi najbližu mačku"
+      ]
+    }
+  },
+
+  "form": {
+    "title": "Reci — i bit ćeš saslušan",
+    "description": "„Orakul sluša samo kad tišina pukne.“",
+
+    "inputs": {
+      "name": "znaju te kao…",
+      "email": "put@email.com",
+      "question": "ovdje podrhtava tvoje pitanje..."
+    },
+
+    "button": {
+      "default": "Pitaj Orakula",
+      "sending": "Predajemo zvijezdama"
+    },
+
+    "response": "Tvoja poruka je poslana. Pričekaj odgovor",
+
+    "error": {
+      "invalidEmail": "Ni zvijezde ne miješaju točke i @...",
+      "shortName": "Orakulu treba ime...",
+      "emptyQuestion": "Orakul predviđa, ali tišinu ne čuje.",
+      "server": "Nešto je pošlo po zlu.",
+      "network": "Nema veze s Orakulom."
+    },
+
+    "alt": {
+      "eye": "oko Oraculuxa",
+      "portalSvg": "astralni portal",
+      "successIcon": "uspjeh",
+      "warningIcon": "greška"
+    }
+  },
+
+  "constellationMap": {
+    "title": "Poruke zapisane u zvijezdama",
+    "subline": "Svako zviježđe šapće svoju istinu.",
+
+    "signs": {
+      "aquarius": "Vodenjak",
+      "capricorn": "Jarac",
+      "gemini": "Blizanci",
+      "leo": "Lav",
+      "virgo": "Djevica",
+      "scorpio": "Škorpion",
+      "taurus": "Bik",
+      "libra": "Vaga",
+      "sagittarius": "Strijelac",
+      "pisces": "Ribe",
+      "cancer": "Rak",
+      "aries": "Ovan"
+    },
+
+    "alt": {
+      "aquarius": "zviježđe Vodenjak",
+      "capricorn": "zviježđe Jarac",
+      "gemini": "zviježđe Blizanci",
+      "leo": "zviježđe Lav",
+      "virgo": "zviježđe Djevica",
+      "scorpio": "zviježđe Škorpion",
+      "taurus": "zviježđe Bik",
+      "libra": "zviježđe Vaga",
+      "sagittarius": "zviježđe Strijelac",
+      "pisces": "zviježđe Ribe",
+      "cancer": "zviježđe Rak",
+      "aries": "zviježđe Ovan"
+    },
+
+    "desc": {
+      "aquarius": ["Vodenjak", "ideje, budućnost, jasnoća"],
+      "capricorn": ["Jarac", "uspjeh, sreća, misao"],
+      "gemini": ["Blizanci", "izbor, um, dvojnost"],
+      "leo": ["Lav", "ponos, strast, slava"],
+      "virgo": ["Djevica", "red, fokus, logika"],
+      "scorpio": ["Škorpion", "dubina, promjena, želja"],
+      "taurus": ["Bik", "udobnost, obilje, korijeni"],
+      "libra": ["Vaga", "ravnoteža, ljepota, istina"],
+      "sagittarius": ["Strijelac", "put, kretanje, vizija"],
+      "pisces": ["Ribe", "snovi, osjećaji, duša"],
+      "cancer": ["Rak", "dom, briga, srce"],
+      "aries": ["Ovan", "snaga, energija, rizik"]
+    }
+  },
+
+  "graffiti": {
+    "1": "„Pokušaj ugasiti i upaliti.“",
+    "2": "„Nisu bili iskreni s tobom.“",
+    "3": "„Ovisi o trećem kamenu.“",
+    "4": "„Još nije vrijeme… ali uskoro.“",
+
+    "5": "„Bili su ponosni na tebe.“",
+    "6": "„Neće biti lako… ali vrijedno je.“",
+    "7": "„Shvatit ćeš kad stigneš tamo.“",
+    "8": "„Napravio si pravi izbor.“",
+
+    "9": "„Trebao si poslušati.“",
+    "10": "„Hrabro. Sumnjivo, ali hrabro.“",
+    "11": "„Čak ni ja ne znam što to znači.“",
+    "12": "„Primijetio je.“",
+    "13": "„Nisi to trebao vidjeti.“",
+    "14": "„Pazi se tišine koja se lako slaže.“",
+    "15": "„Već znaš odgovor.“",
+
+    "16": "„Ogledalo je lagalo.“",
+    "17": "„Još misle na tebe.“",
+    "18": "„Da. Ne. Možda. Pitaj kad Merkur ne luduje.“",
+    "19": "„Prekasno je.“",
+    "20": "„Ne nakon što se rijeka promijenila.“",
+
+    "21": "„Netko još čeka.“",
+    "22": "„Pitaš krivu dimenziju.“",
+    "23": "„Nisi to trebao znati.“",
+
+    "errorDefault": "Greška 404: jasnoća nije pronađena.",
+    "errorHover": "Sustav resetira svijest"
+  },
+
+  "footer": {
+    "nav": {
+      "ask": "Pitaj Orakula",
+      "commonQuestion": "Najčešće pitanje",
+      "sources": "Izvori odgovora"
+    },
+
+    "me": {
+      "author": "Autor: kotarsis_art",
+      "buyCoffee": "Podrži Orakula kavom",
+      "telegram": "Telegram",
+      "customSite": "Naruči web"
+    },
+
+    "about": {
+      "handcrafted": "🔮 Ručno stvoreno u sjeni zvijezda",
+      "noAiHarmed": "✨ Nijedan AI nije stradao pri stvaranju proročanstva"
+    },
+
+    "copyright": {
+      "main": "© 2025 Oraculux — Uvijek promatra",
+      "alt": "© Oraculux — Vjeruj nevidljivom"
+    },
+
+    "easterEgg": "Portal ostaje otvoren.",
+
+    "alt": {
+      "coffee": "šalica kave"
+    }
+  }
+}

@@ -1,0 +1,280 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.form {
+  @include mx.form-bg;
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-s;
+  padding-block: s.$space-xl;
+  padding-inline: s.$space-s;
+
+  @include mx.mq(break-768) {
+    padding-block: s.$space-xxl;
+    padding-inline: s.$space-m;
+  }
+
+  &__title {
+    @include tp.h2;
+  }
+
+  &__description {
+    @include tp.form-description;
+  }
+
+  &__container {
+    position: relative;
+    @include mx.centered;
+    width: 100%;
+    padding-inline: s.$space-m;
+  }
+
+  &__box {
+    position: relative;
+    width: 300px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include mx.mq(break-430) {
+      width: 500px;
+      height: 500px;
+    }
+
+    @include mx.mq(break-768) {
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+  &__portal {
+    @include mx.centered;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+
+    &-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0.8;
+
+      @include mx.mq(break-430) {
+        opacity: 0.6;
+        width: 95%;
+        height: 95%;
+      }
+      @include mx.mq(break-768) {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__eye {
+    width: 100px;
+    height: 75px;
+
+    @include mx.mq(break-768) {
+      width: 120px;
+      height: 90px;
+    }
+  }
+
+  &__fields {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-s;
+    width: 100%;
+    max-width: 300px;
+    padding-block: s.$space-s;
+    z-index: 2;
+
+    @include mx.mq(break-768) {
+      max-width: 400px;
+    }
+  }
+
+  &__input,
+  &__textarea {
+    @include mx.form-placeholder-basics;
+    @include tp.form-placeholder;
+
+    width: 100%;
+    border-radius: var(--main-radius);
+    border: 1px solid var(--form-input-border);
+    padding: s.$space-xs s.$space-m;
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &::placeholder {
+      color: var(--text-form-placeholder);
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid rgba(164, 6, 232, 0.8);
+      box-shadow: inset 0 0 0 2px rgba(164, 6, 232, 0.3);
+    }
+  }
+
+  &__textarea {
+    min-height: 70px;
+    resize: none;
+  }
+
+  &__button {
+    @include mx.main-button;
+    width: 100%;
+
+    &-wrapper {
+      width: 100%;
+    }
+
+    &-sending {
+      @include mx.centered;
+      flex-direction: row;
+      gap: s.$space-xs;
+    }
+
+    &-text {
+      @include tp.button;
+      position: relative;
+      z-index: 1;
+    }
+
+    span {
+      @include tp.button;
+      @include mx.mq(break-768) {
+        font-size: 20px;
+      }
+    }
+
+    &-icon {
+      width: 28px;
+    }
+  }
+
+  &__response {
+    @include mx.form-response;
+    @include tp.form-response;
+    color: white;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+
+    &.visible {
+      opacity: 1;
+    }
+  }
+
+  &__warning {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+    width: 70px;
+    height: auto;
+    opacity: 0;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #222222;
+    border-radius: var(--form-warning);
+    padding-block: s.$space-xs;
+    padding-inline: s.$space-s;
+    pointer-events: none;
+
+    @include mx.centered;
+    gap: s.$space-s;
+
+    transition:
+      width 3s ease,
+      height 1s ease,
+      opacity 0.4s ease,
+      transform 0.4s ease;
+
+    @include mx.mq(break-390) {
+      top: 50px;
+    }
+
+    @include mx.mq(break-768) {
+      padding-block: 12px;
+      padding-inline: s.$space-l;
+    }
+
+    &.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(-100%);
+      width: auto;
+      min-width: 30px;
+    }
+
+    &.hide {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-50%);
+      width: 40px;
+      height: 20px;
+    }
+
+    &-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    &-line {
+      @include tp.form-warning;
+      width: 100%;
+      min-width: 200px;
+      min-height: 1.4em;
+    
+      @include mx.mq(break-768) {
+        min-width: 10px;
+      }
+    }
+  }
+}
+
+// #region animations
+@keyframes pulse-scale {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.form__fields.pulsing {
+  animation: pulse-scale 1.5s ease-in-out infinite;
+}
+
+@keyframes vanish {
+  0% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0); }
+}
+
+.form__box.vanish {
+  animation: vanish 3s ease-in-out forwards;
+}
+
+@keyframes reappear {
+  0% { opacity: 0; transform: scale(0); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.form__box.reappear {
+  animation: reappear 2.5s ease-in-out forwards;
+}
+
+@keyframes scale-in {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.form__portal-img.returning {
+  animation: scale-in 3s ease-in-out forwards;
+}
+// #endregion

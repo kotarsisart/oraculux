@@ -1,0 +1,179 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+@use '../../../utils/animations/animations.scss' as *;
+
+.oracle-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(16px);
+  transition: opacity .35s ease, transform .35s ease;
+
+  &.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    animation: fadeModalEnter 0.35s ease forwards;
+  }
+
+  &.closing {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeModalLeave 0.35s ease forwards;
+  }
+  
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+  }
+  
+  &__content {
+    @include mx.centered;
+    flex-direction: column;
+    position: relative;
+    gap: s.$space-m;
+    padding-inline: s.$space-m;
+    padding-block: s.$space-xxl;
+    background: #1c1b22;
+    border-radius: 12px;
+    max-width: 340px;
+    z-index: 10;
+    text-align: center;
+    border-radius: var(--main-radius);
+
+    @include mx.mq(break-768) {
+      max-width: 500px
+    }
+
+    @include mx.mq(break-1024) {
+      max-width: 600px
+    }
+
+    &-text {
+      @include tp.hero-modal-content;
+    }
+  }
+  
+  &__button {
+    @include mx.basic-button;
+    @include tp.button;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  &__close {
+    font-size: 70px;
+    line-height: 40%;
+    position: absolute;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    right: 20px;
+    top: 20px;
+    
+    &:hover {
+      transform: scale(1.1);
+      text-shadow: var(--shadow-lang-close);
+    }
+  }
+}
+
+.hero {
+  @include mx.hero-bg;
+  @include mx.centered;
+  @include animate-section(2.8);
+  flex-direction: column;
+  gap: s.$space-l;
+  padding-inline: s.$space-xs;
+  height: 100vh;
+
+  @include mx.mq(break-360) {
+    padding-inline: s.$space-m;
+  }
+  @include mx.mq(break-768) {
+    padding-inline: s.$space-l;
+  }
+  @include mx.mq(break-1024) {
+    padding-inline: s.$space-xl;
+  }
+
+  &__eye {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // pointer-events: none;
+
+    @include mx.mq(break-768) {
+      margin-bottom: s.$space-xl;
+    }
+
+    &-animation {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      transform: translateY(0);
+      will-change: transform, opacity;
+      backface-visibility: hidden;
+  
+      @include mx.mq(break-768) {
+        width: 300px;
+        height: 300px;
+      }
+  
+      @include mx.mq(break-1024) {
+        width: 330px;
+        height: 330px;
+      }
+    }
+  }
+
+  &__title {
+    @include tp.h1;
+  }
+
+  &__subline {
+    @include tp.hero-subline;
+  }
+
+  &__button {
+    @include mx.main-button;
+    @include tp.button;
+  }
+}
+
+@keyframes fadeModalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeModalLeave {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}

@@ -1,0 +1,32 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --header-logo-320: 18px;
+  --header-logo-768: 22px;
+
+  --header-lang-select-320: 15px;
+  --header-lang-select-768: 18px;
+}
+
+@mixin header-logo {
+  font-size: var(--header-logo-320);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+  color: var(--text-logo);
+
+  @include mx.mq(break-768) {
+    font-size: var(--header-logo-768);
+  }
+}
+
+@mixin header-lang-select {
+  font-size: var(--header-lang-select-320);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-lang-select);
+
+  @include mx.mq(break-768) {
+    font-size: var(--header-lang-select-768);
+  }
+}

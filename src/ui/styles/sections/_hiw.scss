@@ -1,0 +1,128 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.hiw {
+  @include mx.hiw-bg;
+  @include mx.centered;
+  flex-direction: column;
+  gap: s.$space-l;
+  padding-inline: s.$space-m;
+  padding-block: s.$space-xl;
+
+  @include mx.mq(break-1024) {
+    gap: s.$space-xl;
+  }
+  @include mx.mq(break-1280) {
+    padding-block: s.$space-xxl;
+  }
+
+  &__title {
+    @include tp.h2;
+    @include mx.text-pink-gradient;
+  }
+
+  &__quote {
+    @include tp.hiw-quote;
+  }
+
+  &__steps {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-m;
+    padding-block: s.$space-m;
+
+    @include mx.mq(break-768) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: s.$space-m; // horizontal
+      row-gap: s.$space-l; // vertical
+    }
+  }
+
+  &__step {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0;
+    padding-inline: s.$space-m;
+    
+    width: var(--hiw-card-width-320);
+    height: var(--hiw-card-height-320);
+
+    border-radius: var(--step-radius);
+    background-color: var(--hiw-card-bg-default);
+
+    transition: all 0.5s ease;
+
+    cursor: pointer;
+
+    @include mx.mq(break-360) {
+      width: var(--hiw-card-width-360);
+      padding-block: s.$space-s;
+      gap: s.$space-s;
+    }
+    @include mx.mq(break-1440) {
+      width: var(--hiw-card-width-1440);
+      height: var(--hiw-card-height-1440);
+      gap: s.$space-l;
+    }
+
+    &:hover {
+      background-color: var(--hiw-card-bg-hover);
+      gap: s.$space-s;
+      padding-block: s.$space-m;
+
+      @include mx.mq(break-1440) {
+        gap: s.$space-m;
+        padding-block: s.$space-xl;
+
+      }
+    }
+
+    &-title-container {
+      @include mx.centered;
+      flex-direction: column-reverse;
+      gap: s.$space-s;
+
+      @include mx.mq(break-360) {
+        flex-direction: row;
+      }
+    }
+
+    &-title {
+      @include tp.hiw-card-title;
+      white-space: nowrap;
+    }
+
+    &-text-container {
+      @include mx.centered;
+      height: 40px;
+      overflow: visible;
+    }
+
+    &-description {
+      @include tp.hiw-card-description;
+      @include mx.centered;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 0.6s ease, max-height 0.6s ease;
+    }
+
+    &:hover .hiw__step-description {
+      opacity: 1;
+      max-height: 40px;
+    }
+
+    &-icon {
+      width: var(--hiw-card-icon-width);
+    }
+  }
+
+  &__arrow {
+    @include mx.mq(break-768) {
+      rotate: 90deg;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --graffiti-mystical-320: 11px;
+  --graffiti-mystical-1024: 16px;
+  --graffiti-mystical-1280: 18px;
+
+  --graffiti-accent-320: 11px;
+  --graffiti-accent-1024: 14px;
+  --graffiti-accent-1440: 16px;
+
+  --graffiti-common-320: 10px;
+  --graffiti-common-1280: 14px;
+  --graffiti-common-1440: 16px;
+
+  --graffiti-hint-320: 11px;
+  --graffiti-hint-1024: 12px;
+  --graffiti-hint-1280: 14px;
+
+  --graffiti-humor-320: 14px;
+  --graffiti-humor-1024: 16px;
+  --graffiti-humor-1440: 18px;
+}
+
+@mixin graffiti-mystical {
+  font-size: var(--graffiti-mystical-320);
+  font-weight: normal;
+  letter-spacing: 0.05em;
+
+  @include mx.mq(break-1024) {
+    font-size: var(--graffiti-mystical-1024);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--graffiti-mystical-1280);
+    letter-spacing: 0.15em;
+  }
+}
+
+@mixin graffiti-accent {
+  font-size: var(--graffiti-accent-320);
+  font-weight: (--font-weight-regular);
+  letter-spacing: 0.05em;
+
+  @include mx.mq(break-1024) {
+    font-size: var(--graffiti-accent-1024);
+    letter-spacing: 0.1em;
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--graffiti-accent-1440);
+    letter-spacing: 0.15em;
+  }
+}
+
+@mixin graffiti-common {
+  font-size: var(--graffiti-common-320);
+
+  @include mx.mq(break-1280) {
+    font-size: var(--graffiti-common-1280);
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--graffiti-common-1440);
+  }
+}
+
+@mixin graffit-hint {
+  font-size: var(--graffiti-hint-320);
+  letter-spacing: 0.15em;
+
+  @include mx.mq(break-1024) {
+    font-size: var(--graffiti-hint-1024);
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--graffiti-hint-1280);
+    letter-spacing: 0.3em;
+  }
+}
+
+@mixin graffiti-humor {
+  font-size: var(--graffiti-humor-320);
+  letter-spacing: -0.05rem;
+
+  @include mx.mq(break-1024) {
+    font-size: var(--graffiti-humor-1024);
+    letter-spacing: -0.1rem;
+  }
+  @include mx.mq(break-1440) {
+    font-size: var(--graffiti-humor-1440);
+  }
+}

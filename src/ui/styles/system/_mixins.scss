@@ -1,0 +1,285 @@
+@use 'sass:map';
+@use '../system/variables' as *;
+@use '../tokens/spacing' as s;
+
+@mixin centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@mixin mq($point) {
+  $size: map.get($breakpoints, $point);
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin text-gradient($direction, $colors...) {
+  background: linear-gradient($direction, $colors...);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin text-pink-gradient {
+  @include text-gradient(
+    to right,
+    var(--text-gradient-start),
+    var(--text-gradient-middle),
+    var(--text-gradient-end)
+  );
+}
+
+@mixin basic-button {
+  @include centered;
+  padding-inline: s.$space-l;
+  padding-block: s.$space-m;
+  border: none;
+  border-radius: var(--main-radius);
+  cursor: pointer;
+}
+
+@mixin main-button {
+  @include basic-button;
+  background-color: var(--button-default);
+  transition: background 0.4s ease;
+  box-shadow: var(--shadow-3d);
+
+  &:hover {
+    background-color: var(--button-hover);
+  }
+
+  &:active {
+    background-color: var(--button-clicked);
+  }
+}
+
+@mixin preloader-bg {
+  background: linear-gradient(
+    135deg, 
+    var(--preloader-bg-start),
+    var(--preloader-bg-middle),
+    var(--preloader-bg-end),
+  )
+}
+
+@mixin hero-bg {
+  background-image:
+  url(../../../assets/images/hero-bg.jpg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  height: 100dvh;
+}
+
+@mixin benefits-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--benefits-bg-start) 0%,
+    var(--benefits-bg-middle) 80%,
+    var(--benefits-bg-end) 100%
+  );
+}
+
+@mixin hiw-bg {
+  background: linear-gradient(
+    to bottom,
+    var(--hiw-bg-start) 0%,
+    var(--hiw-bg-middle) 10%,
+    var(--hiw-bg-end) 100%
+  );
+}
+
+@mixin ritual-bg {
+  background-image:
+    url("../../../assets/images/ritual-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+}
+
+// constellation-map
+@mixin constellation-map-bg {
+  background-image:
+    url("../../../assets/images/constellation-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+}
+
+@mixin constellation-container-width-large {
+  width: var(--constellation-container-width-large-320);
+
+  @include mq(break-360) {
+    width: var(--constellation-container-width-large-360);
+  }
+
+  @include mq(break-390) {
+    width: var(--constellation-container-width-large-390);
+  }
+
+  @include mq(break-768) {
+    width: var(--constellation-container-width-large-768);
+  }
+}
+
+@mixin constellation-container-width-medium {
+  width: var(--constellation-container-width-medium-320);
+
+  @include mq(break-360) {
+    width: var(--constellation-container-width-medium-360);
+  }
+
+  @include mq(break-390) {
+    width: var(--constellation-container-width-medium-390);
+  }
+
+  @include mq(break-768) {
+    width: var(--constellation-container-width-medium-768);
+  }
+}
+
+@mixin constellation-container-width-narrow {
+  width: var(--constellation-container-width-narrow-320);
+
+  @include mq(break-360) {
+    width: var(--constellation-container-width-narrow-360);
+  }
+
+  @include mq(break-390) {
+    width: var(--constellation-container-width-narrow-390);
+  }
+
+  @include mq(break-768) {
+    width: var(--constellation-container-width-narrow-768);
+  }
+}
+
+// form
+@mixin form-bg  {
+  background-image:
+    url("../../../assets/images/form-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+}
+
+@mixin form-placeholder-basics {
+  background-color: var(--form-input-bg);
+  border-radius: var(--main-radius);
+  padding-block: s.$space-xs;
+  padding-inline: s.$space-m;
+  text-align: left;
+  height: 40px;
+  width: 100%;
+  border: 1px solid var(--form-input-border);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+  @include mq(break-768) {
+    height: 50px
+  }
+}
+
+@mixin form-response {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+  width: 300px; 
+  text-align: center;
+  white-space: normal;
+  overflow: hidden;
+
+  @include mq(break-768) {
+    width: 700px; 
+  }
+
+  @include mq(break-834) {
+    width: 800px; 
+  }
+
+  @include mq(break-1024) {
+    width: 1000px; 
+  }
+}
+
+// graffiti
+@mixin graffiti-bg  {
+  background-image:
+    url("../../../assets/images/graffiti-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+}
+
+@mixin graffiti-error {
+  width: 150px;
+  text-align: center;
+  white-space: normal;
+  text-wrap: balance;
+  hyphens: auto;
+  display: inline-block;
+  position: relative;
+
+  .error-phrase__default,
+  .error-phrase__hover {
+    display: block;
+    transition: opacity 0.4s ease;
+  }
+
+  .error-phrase__hover {
+    position: absolute;
+    text-wrap: wrap;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &.show-hover-text {
+    .error-phrase__default {
+      opacity: 0;
+    }
+
+    .error-phrase__hover {
+      opacity: 1;
+    }
+  }
+
+  @include mq(break-1024) {
+    width: auto;
+      .error-phrase__hover {
+        width: auto;
+        text-wrap: nowrap;
+      }
+  }
+}
+
+// lang page
+@mixin lang-page-bg {
+  background: linear-gradient(
+    135deg, 
+    var(--lang-page-bg-start),
+    var(--lang-page-bg-middle),
+    var(--lang-page-bg-end),
+  )
+}

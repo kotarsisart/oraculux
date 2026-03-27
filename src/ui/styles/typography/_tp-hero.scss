@@ -1,0 +1,39 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --hero-subline-320: 16px;
+  --hero-subline-768: 24px;
+  --hero-subline-1024: 2 8px;
+
+  --hero-modal-content-320: 18px;
+  --hero-modal-content-768: 26px;
+  --hero-modal-content-1024: 32px;
+}
+
+@mixin hero-subline {
+  font-size: var(--hero-subline-320);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  color: var(--text-subline);
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-subline-768);
+  }
+  @include mx.mq(break-1024) {
+    font-size: var(--hero-subline-1024);
+  }
+}
+
+@mixin hero-modal-content {
+  font-size: var(--hero-modal-content-320);
+
+  @include mx.mq(break-768) {
+    font-size: var(--hero-modal-content-768);
+  }
+
+  @include mx.mq(break-1024) {
+    font-size: var(--hero-modal-content-1024);
+  }
+}

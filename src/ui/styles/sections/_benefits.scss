@@ -1,0 +1,100 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+@use '../tokens/dimensions' as *;
+@use '../../../utils/animations/animations.scss' as *;
+
+.benefits {
+  @include mx.centered;
+  @include mx.benefits-bg;
+  // @include animate-section(0.1);
+  flex-direction: column;
+  gap: s.$space-xl;
+  padding-block: s.$space-xl;
+  
+  @include mx.mq(break-768) {
+    // @include animate-section(1);
+    padding-block: s.$space-xl;
+  }
+
+  &__text {
+    @include mx.centered;
+    flex-direction: column;
+    gap: s.$space-m;
+    padding-inline: s.$space-s;
+
+    &-title {
+      @include tp.h2;
+      @include mx.text-pink-gradient;
+    }
+
+    &-description {
+      @include tp.benefits-description;
+      color: var(--text-subline);
+    }
+  }
+
+  &__cards {
+    @include mx.centered;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: s.$space-l;
+    padding-inline: s.$space-l;
+
+    @include mx.mq(break-768) {
+      gap: s.$space-xl;
+    }
+    @include mx.mq(break-1024) {
+      gap: 20px;
+    }
+  }
+
+  &__card {
+    @include mx.centered;
+    justify-content: start;
+    flex-direction: column;
+    gap: s.$space-m;
+    padding-inline: s.$space-m;
+    padding-block: s.$space-xl;
+    background-color: var(--benefits-card-bg-default);
+    border-radius: var(--main-radius);
+    box-shadow: var(--shadow-benefits-card-default);
+    transition: all 0.4s ease;
+    width: var(--benefits-card-width-320);
+    height: var(--benefits-card-height-320);
+
+    @include mx.mq(break-1440) {
+      width: var(--benefits-card-width-1440);
+      height: var(--benefits-card-height-1440);
+    }
+
+    &:hover {
+      background-color: var(--benefits-card-bg-hover);
+      box-shadow: var(--shadow-benefits-card-default);
+    }
+
+    &-text {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      gap: s.$space-s;
+    }
+
+    &-title {
+      @include tp.benefits-card-title;
+    }
+
+    &-description {
+      @include tp.benefits-card-description;
+    }
+
+    &-icon {
+     height: var(--benefits-card-icon-height-320);
+
+     @include mx.mq(break-1440) {
+      height: var(--benefits-card-icon-height-1440);
+     }
+    }
+  }
+}

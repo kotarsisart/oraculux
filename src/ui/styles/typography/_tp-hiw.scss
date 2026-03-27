@@ -1,0 +1,53 @@
+@use '../system/mixins' as mx;
+@use './tp-base' as *;
+@use '../tokens/index.scss' as *;
+
+:root {
+  --hiw-quote-320: 14px;
+  --hiw-quote-430: 18px;
+  --hiw-quote-834: 20px;
+  --hiw-quote-1280: 22px;
+
+  --hiw-card-title-320: 14px;
+  --hiw-card-title-1440: 18px;
+
+  --hiw-card-description-320: 13px;
+  --hiw-card-description-1440: 16px;
+}
+
+@mixin hiw-quote {
+  font-size: var(--hiw-quote-320);
+  color: var(--text-quote);
+
+  @include mx.mq(break-430) {
+    font-size: var(--hiw-quote-430);
+    letter-spacing: 0.1em;
+  }
+  @include mx.mq(break-834) {
+    font-size: var(--hiw-quote-834);
+    letter-spacing: 0.2em;
+  }
+  @include mx.mq(break-1280) {
+    font-size: var(--hiw-quote-1280);
+    letter-spacing: 0.3em;
+  }
+}
+
+@mixin hiw-card-title {
+  font-size: var(--hiw-card-title-320);
+  font-weight: var(--font-weight-bold);
+
+  @include mx.mq(break-1440) {
+    font-size: var(--hiw-card-title-1440);
+  }
+}
+
+@mixin hiw-card-description {
+  font-size: var(--hiw-card-description-320);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-hiw-description);
+
+  @include mx.mq(break-1440) {
+    font-size: var(--hiw-card-description-1440);
+  }
+}

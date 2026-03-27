@@ -1,0 +1,110 @@
+:root {
+  // TEXT COLORS
+  // main
+  --text-primary: #FFFFFF;
+  --text-purple-title: #A26FFF;
+  --text-subline: #A794FF;
+  --text-quote: #C689FF;
+
+  --text-gradient-start: #D6B3FF;
+  --text-gradient-middle: #FFB3FF;
+  --text-gradient-end: #B281F6;
+
+  // preloader 
+  --text-preloader-kotarsis: #F1EEFF;
+  --text-preloader-presents: #F1EEFFBF;
+  
+  // langs
+  --text-lang-hover: #874BFF;
+  --text-lang-disabled: #707070;
+
+  // hero
+  --text-hero-gradient-start: #FCFCFC;
+  --text-hero-gradient-end: #999999;
+
+  // header
+  --text-logo: #8231FB;
+  --text-lang-select: #DCA3FF;
+
+  // benefits
+  --text-benefits-title: #EAAFFF;
+  
+  // how it works
+  --text-hiw-description: #D2B8FD;
+
+  // ritual 
+  --text-ritual-question: #E5D6FF;
+  --text-ritual-scanning: #ffe6f3cc;
+
+  // constellation
+  --text-constellation-description: #BDA4FF;
+  --shadow-constellation: #D9BFFF;
+ 
+  // form
+  --text-form-description: #FFFFFFB3;
+  --text-form-placeholder: #8370FF80;
+  
+  // footer
+  --text-footer-nav: #EAD6F9;
+  --text-footer-me-links: #E0D0FF;
+  --text-footer-me-links-hover: #c14fe7;
+  --text-footer-outro: #C2B3E0;
+  --text-footer-easter-egg: #6b44c640;
+
+  // LAYOUT 
+  --header-footer-bg: #18032B;
+
+  // PRELOADER 
+  --preloader-bg-start: #12021C;
+  --preloader-bg-middle: #0A071A;
+  --preloader-bg-end: #020208;
+  
+  --preloader-divider: #5500D5BF;
+
+  // LANGUAGE PAGE
+  --lang-page-bg-start: #090312;
+  --lang-page-bg-middle: #261230;
+  --lang-page-bg-end: #260940;
+
+  // BUTTON
+  --button-default: #5D2BD2;
+  --button-hover: #3B119C;
+  --button-clicked: #200463;
+
+  // HEADER 
+  --lang-select-bg: #0A0110;
+
+  // BENEFITS
+  --benefits-bg-start: #0A0A0A;
+  --benefits-bg-middle: #1B0B29;
+  --benefits-bg-end: #220C35;
+
+  --benefits-card-bg-default: #5C24BE;
+  --benefits-card-bg-hover: #4B14AC;
+
+  // HOW IT WORKS
+  --hiw-bg-start: #220C35;
+  --hiw-bg-middle: #1B0430;
+  --hiw-bg-end: #04010E;
+
+  --hiw-card-bg-default: #4B23A1;
+  --hiw-card-bg-hover: #661FD4;
+
+  // RITUAL 
+  --ritual-bg-start: #02050A90;
+  --ritual-bg-end: #08080C90;
+
+  --ritual-circle-bg-default: #8A6BFF;
+  --ritual-circle-bg-hover: #927CFF;
+  --ritual-circle-bg-waiting: #7961FE;
+  --ritual-circle-bg-answer: #5E39DA;
+
+  // CONSTELLATION
+  --constellation-color: #F7F5E9;
+
+  // FORM 
+  --form-input-bg: #020408;
+  --form-input-border: #FFFFFF40;
+  --form-portal-stroke: #8370FF66;
+  --form-portal-stroke-after: #8370FF80;
+}

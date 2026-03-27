@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+
+  <!-- Oraculux homepage in all languages -->
+  <url>
+    <loc>https://kotarsis.com/oraculux/en</loc>
+
+    <xhtml:link rel="alternate" hreflang="en" href="https://kotarsis.com/oraculux/en" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://kotarsis.com/oraculux/pl" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://kotarsis.com/oraculux/uk" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://kotarsis.com/oraculux/ru" />
+    <xhtml:link rel="alternate" hreflang="be" href="https://kotarsis.com/oraculux/be" />
+    <xhtml:link rel="alternate" hreflang="bg" href="https://kotarsis.com/oraculux/bg" />
+    <xhtml:link rel="alternate" hreflang="hr" href="https://kotarsis.com/oraculux/hr" />
+    <xhtml:link rel="alternate" hreflang="mk" href="https://kotarsis.com/oraculux/mk" />
+    <xhtml:link rel="alternate" hreflang="sk" href="https://kotarsis.com/oraculux/sk" />
+    <xhtml:link rel="alternate" hreflang="sl" href="https://kotarsis.com/oraculux/sl" />
+    <xhtml:link rel="alternate" hreflang="sr" href="https://kotarsis.com/oraculux/sr" />
+
+
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+</urlset>

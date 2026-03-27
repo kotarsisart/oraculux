@@ -1,0 +1,902 @@
+@use '../system/mixins' as mx;
+@use '../tokens/spacing' as s;
+@use '../typography/index' as tp;
+
+.graffiti {
+  @include mx.graffiti-bg;
+  line-height: var(--line-height-light);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.graffiti__row {
+  position: relative;
+  display: none;
+}
+
+.graffiti__row--mobile {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 320px;
+  height: 100%;
+}
+
+.graffiti__phrase {
+  position: absolute;
+  white-space: nowrap;
+}
+
+.graffiti__phrase-m2,
+.graffiti__phrase-m6 {
+  display: none;
+}
+
+@include mx.mq(break-390) {
+  .graffiti__phrase-m2,
+  .graffiti__phrase-m6 {
+    display: inline;
+  }
+}
+
+.graffiti__phrase-m7 {
+  top: 9px;
+  left: 10px;
+  @include tp.graffiti-humor;
+}
+
+.graffiti__phrase-m1 {
+  top: 44px;
+  left: 120px;
+  @include tp.graffiti-mystical;
+}
+
+.graffiti__phrase-m5 {
+  top: 79px;
+  left: 11px;
+  transform: rotate(3deg);
+  opacity: 0.7;
+  @include tp.graffit-hint;
+}
+
+.graffiti__phrase-m3 {
+  top: 120px;
+  left: 19px;
+  opacity: 0.2;
+  @include tp.graffiti-mystical;
+}
+
+.error-phrase {
+  @include mx.graffiti-error;
+  @include tp.graffiti-accent
+}
+
+.error-phrase-m {
+  top: 140px;
+  left: 150px;
+}
+
+.graffiti__phrase-m9 {
+  top: 189px;
+  left: 19px;
+  transform: rotate(-10deg);
+  @include tp.graffiti-accent;
+}
+
+.graffiti__phrase-m4 {
+  top: 237px;
+  left: 116px;
+  transform: rotate(5deg);
+  opacity: 0.4;
+  @include tp.graffiti-common;
+}
+
+.graffiti__phrase-m8 {
+  top: 257px;
+  left: 30px;
+  @include tp.graffiti-common;
+}
+
+@include mx.mq(break-360) {
+  .graffiti {
+    height: 320px
+  }
+
+  .graffiti__row--mobile {
+    width: 360px;
+  }
+
+  .graffiti__phrase-m7 {
+    top: 33px;
+    left: 17px;
+  }
+
+  .graffiti__phrase-m1 {
+    top: 81px;
+    left: 160px;
+  }
+
+  .graffiti__phrase-m5 {
+    top: 119px;
+    left: 11px;
+  }
+
+  .graffiti__phrase-m3 {
+    top: 181px;
+    left: 12px;
+  }
+
+  .error-phrase-m {
+    top: 169px;
+    left: 180px;
+  }
+
+  .graffiti__phrase-m9 {
+    top: 216px;
+    left: 17px;
+  }
+
+  .graffiti__phrase-m4 {
+    top: 257px;
+    left: 150px;
+  }
+
+  .graffiti__phrase-m8 {
+    top: 289px;
+    left: 104px;
+  }
+}
+
+@include mx.mq(break-390) {
+  .graffiti {
+    height: 350px
+  }
+
+  .graffiti__row--mobile {
+    width: 390px;
+  }
+
+  .graffiti__phrase-m1 {
+    top: 11px;
+    left: 12px;
+  }
+
+  .graffiti__phrase-m2 {
+    top: 40px;
+    left: 5px;
+    transform: rotate(-10deg);
+    @include tp.graffiti-humor;
+  }
+
+  .graffiti__phrase-m3 {
+    top: 70px;
+    left: 226px;
+  }
+
+  .graffiti__phrase-m4 {
+    top: 105px;
+    left: 179px;
+  }
+
+  .graffiti__phrase-m5 {
+    top: 136px;
+    left: 6px;
+  }
+
+  .graffiti__phrase-m6 {
+    top: 171px;
+    left: 72px;
+    transform: rotate(-4deg);
+    @include tp.graffiti-humor;
+  }
+
+  .graffiti__phrase-m7 {
+    top: 224px;
+    left: 113px;
+  }
+
+  .graffiti__phrase-m8 {
+    top: 244px;
+    left: 11px;
+  }
+
+  .graffiti__phrase-m9 {
+    top: 281px;
+    left: 11px;
+  }
+
+  .error-phrase-m {
+    top: 300px;
+    left: 184px;
+  }
+
+}
+
+@include mx.mq(break-390) {
+  .graffiti__row--mobile {
+    width: 430px;
+  }
+
+  .graffiti__phrase-m1 {
+    top: 18px;
+    left: 16px;
+  }
+
+  .graffiti__phrase-m2 {
+    top: 44px;
+    left: 15px;
+  }
+
+  .graffiti__phrase-m3 {
+    top: 73px;
+    left: 246px;
+  }
+
+  .graffiti__phrase-m4 {
+    top: 106px;
+    left: 211px;
+  }
+
+  .graffiti__phrase-m5 {
+    top: 139px;
+    left: 11px;
+  }
+
+  .graffiti__phrase-m6 {
+    top: 183px;
+    left: 74px;
+  }
+
+  .graffiti__phrase-m7 {
+    top: 233px;
+    left: 150px;
+  }
+
+  .graffiti__phrase-m8 {
+    top: 248px;
+    left: 16px;
+  }
+
+  .graffiti__phrase-m9 {
+    top: 284px;
+    left: 17px;
+  }
+
+  .error-phrase-m {
+    top: 304px;
+    left: 207px;
+  }
+
+}
+
+@include mx.mq(break-768) {
+.graffiti {
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: auto;
+  padding-bottom: s.$space-l;
+  padding-top: s.$space-m;
+}
+
+.graffiti__row--mobile {
+  display: none !important;
+}
+
+.graffiti__row {
+  display: block;
+  width: 720px;
+}
+
+
+.graffiti__row--top {
+  height: 60px;
+}
+.graffiti__row--mid-top {
+  height: 80px;
+}
+.graffiti__row--center {
+  height: 150px;
+}
+.graffiti__row--mid-bottom {
+  height: 90px;
+}
+.graffiti__row--bottom {
+  height: 80px;
+}
+
+// row top
+.graffiti__phrase-1 {
+  @include tp.graffiti-common;
+  left: 15px;
+  top: 14px;
+  transform: rotate(-4deg);
+}
+
+.graffiti__phrase-2 {
+  @include tp.graffiti-mystical;
+  left: 258px;
+  top: 18px;
+}
+
+.graffiti__phrase-3 {
+  display: none;
+}
+
+.graffiti__phrase-4 {
+  @include tp.graffit-hint;
+  left: 485px;
+  top: 18px;
+  transform: rotate(3deg);
+}
+
+// row mid-top
+.graffiti__phrase-5 {
+  @include tp.graffiti-common;
+  left: 14px;
+  top: 48px;
+  transform: rotate(4deg);
+}
+
+.graffiti__phrase-6 {
+  @include tp.graffiti-mystical;
+  left: 175px;
+  top: 20px;
+  opacity: 0.5;
+  transform: rotate(-5deg);
+}
+
+.graffiti__phrase-7 {
+  @include tp.graffiti-accent;
+  width: 250px;
+  text-wrap: wrap;
+  left: 307px;
+  top: 48px;
+  opacity: 0.7;
+}
+
+.graffiti__phrase-8 {
+  @include tp.graffiti-common;
+  left: 520px;
+  top: 25px;
+  opacity: 0.4;
+  transform: rotate(10deg);
+}
+
+// row center
+.graffiti__phrase-9 {
+  @include tp.graffiti-mystical;
+  left: 285px;
+  top: 26px;
+}
+
+.graffiti__phrase-10 {
+  @include tp.graffiti-common;
+  left: 8px;
+  top: 30px;
+  opacity: 0.5;
+  transform: rotate(10deg);
+}
+
+.graffiti__phrase-11 {
+  @include tp.graffiti-humor;
+  left: 453px;
+  top: 107px;
+}
+
+.graffiti__phrase-12 {
+  @include tp.graffiti-common;
+  left: 4px;
+  top: 120px;
+}
+
+.graffiti__phrase-13 {
+  @include tp.graffiti-common;
+  left: 486px;
+  top: 15px;
+}
+
+.graffiti__phrase-3 {
+  @include tp.graffiti-common;
+  display: inline-block;
+  left: 78px;
+  top: 230px;
+}
+
+.graffiti__phrase-14 {
+  display: none;
+}
+
+.graffiti__phrase-15 {
+  @include tp.graffit-hint;
+  left: 285px;
+  top: 78px;
+  transform: rotate(-20deg);
+}
+
+// row mid-bottom
+.graffiti__phrase-16 {
+  @include tp.graffiti-mystical;
+  left: 488px;
+  top: 14px;
+  opacity: 0.3;
+}
+
+.graffiti__phrase-17 {
+  @include tp.graffiti-mystical;
+  left: 335px;
+  top: 55px;
+  transform: rotate(5deg)
+}
+
+.graffiti__phrase-18 {
+  @include tp.graffiti-humor;
+  left: 38px;
+  top: 38px;
+  transform: rotate(-10deg)
+}
+
+.graffiti__phrase-19 {
+  @include tp.graffiti-mystical;
+  left: 7px;
+  top: 10px;
+  opacity: 0.2;
+}
+
+.graffiti__phrase-20 {
+  @include tp.graffiti-accent;
+  left: 510px;
+  top: 40px;
+  transform: rotate(-15deg);
+}
+
+// row bottom
+.error-phrase-d {
+  left: 430px;
+  top: 50px;
+}
+
+.graffiti__phrase-21 {
+  @include tp.graffiti-common;
+  left: 533px;
+  top: 24px;
+  transform: rotate(5deg);
+}
+
+.graffiti__phrase-22 {
+  @include tp.graffiti-humor;
+  left: 8px;
+  top: 32px;
+  transform: rotate(10deg);
+}
+
+.graffiti__phrase-23 {
+  @include tp.graffit-hint;
+  left: 226px;
+  top: 20px;
+  transform: rotate(-3deg);
+}
+
+}
+
+@include mx.mq(break-834) {
+.graffiti__row {
+  width: 790px;
+}
+
+// row top
+
+.graffiti__row--top {
+  height: 50px;
+}
+
+.graffiti__phrase-2 {
+  left: 270px;
+  top: 18px;
+}
+
+.graffiti__phrase-4 {
+  left: 540px;
+  top: 18px;
+}
+
+// row mid-top
+.graffiti__phrase-5 {
+  left: 4px;
+}
+
+.graffiti__phrase-6 {
+  left: 180px;
+}
+
+.graffiti__phrase-7 {
+  left: 347px;
+}
+
+.graffiti__phrase-8 {
+  left: 590px;
+}
+
+// row center
+.graffiti__phrase-9 {
+  left: 305px;
+  top: 26px;
+}
+
+.graffiti__phrase-10 {
+  left: 18px;
+  top: 30px;
+}
+
+.graffiti__phrase-11 {
+  left: 523px;
+}
+
+.graffiti__phrase-12 {
+  left: 24px;
+}
+
+.graffiti__phrase-13 {
+  left: 546px;
+}
+
+.graffiti__phrase-3 {
+  left: 118px;
+  top: 220px
+}
+
+.graffiti__phrase-15 {
+  left: 355px;
+}
+
+// row mid-bottom
+.graffiti__phrase-16 {
+  left: 518px;
+}
+
+.graffiti__phrase-17 {
+  left: 375px;
+}
+
+.graffiti__phrase-19 {
+  left: 17px;
+}
+
+.graffiti__phrase-20 {
+  left: 580px;
+}
+
+// row bottom
+.error-phrase-d {
+  left: 450px;
+}
+
+.graffiti__phrase-21 {
+  left: 593px;
+}
+
+.graffiti__phrase-23 {
+  left: 266px;
+}
+}
+
+@include mx.mq(break-1024) {
+.graffiti {
+  padding-bottom: s.$space-xl;
+}
+
+.graffiti__row {
+  width: 980px;
+}
+
+.graffiti__row--top {
+  height: 80px;
+}
+
+.graffiti__row--mid-top {
+  height: 100px;
+}
+
+.graffiti__row--center {
+  height: 180px;
+}
+
+.graffiti__row--mid-bottom {
+  height: 120px;
+}
+
+
+// row top
+.graffiti__phrase-1 {
+  left: 11px;
+  top: 15px;
+}
+
+.graffiti__phrase-2 {
+  left: 325px;
+  top: 9px;
+}
+
+.graffiti__phrase-3 {
+  left: 439px;
+  top: 47px;
+}
+
+.graffiti__phrase-4 {
+  left: 722px;
+  top: 19px;
+}
+
+// row mid-top
+.graffiti__phrase-5 {
+  left: 9px;
+  top: 18px;
+}
+
+.graffiti__phrase-6 {
+  left: 153px;
+  top: 46px;
+}
+
+.graffiti__phrase-7 {
+  left: 540px;
+  top: 50px;
+  width: 250px;
+}
+
+.graffiti__phrase-8 {
+  left: 726px;
+  top: 30px;
+}
+
+// row center
+.graffiti__phrase-9 {
+  left: 195px;
+  top: 141px;
+}
+
+.graffiti__phrase-10 {
+  left: 5px;
+  top: 40px;
+}
+
+.graffiti__phrase-11 {
+  left: 700px;
+  top: 148px;
+}
+
+.graffiti__phrase-12 {
+  left: 9px;
+  top: 128px;
+}
+
+.graffiti__phrase-13 {
+  left: 488px;
+  top: 14px;
+}
+
+.graffiti__phrase-14 {
+  display: inline-block;
+  @include tp.graffiti-accent;
+  left: 268px;
+  top: 57px;
+  transform: rotate(12deg);
+}
+
+.graffiti__phrase-15 {
+  left: 683px;
+  top: 54px;
+}
+
+// row mid-bottom
+.graffiti__phrase-16 {
+  left: 566px;
+  top: 14px;
+}
+
+.graffiti__phrase-17 {
+  left: 437px;
+  top: 75px;
+}
+
+.graffiti__phrase-18 {
+  left: 124px;
+  top: 43px;
+}
+
+.graffiti__phrase-19 {
+  left: 5px;
+  top: 19px;
+}
+
+.graffiti__phrase-20 {
+  left: 686px;
+  top: 44px;
+}
+
+// row bottom
+.error-phrase-d {
+  left: 560px;
+  top: 48px;
+}
+
+.graffiti__phrase-21 {
+  left: 734px;
+  top: 15px;
+}
+
+.graffiti__phrase-22 {
+  left: 18px;
+  top: 30px;
+}
+
+.graffiti__phrase-23 {
+  left: 298px;
+  top: 18px;
+}
+
+}
+
+@include mx.mq(break-1280) {
+.graffiti {
+  padding-bottom: s.$space-xl;
+}
+
+.graffiti__row {
+  width: 1280px;
+}
+
+// row top
+.graffiti__phrase-1 {
+  left: 13px;
+  top: 18px;
+}
+
+.graffiti__phrase-2 {
+  left: 353px;
+  top: 10px;
+}
+
+.graffiti__phrase-3 {
+  left: 660px;
+  top: 48px;
+}
+
+.graffiti__phrase-4 {
+  left: 897px;
+  top: 16px;
+}
+
+// row mid-top
+.graffiti__phrase-5 {
+  left: 12px;
+  top: 18px;
+}
+
+.graffiti__phrase-6 {
+  left: 232px;
+  top: 34px;
+}
+
+.graffiti__phrase-7 {
+  left: 755px;
+  top: 44px;
+}
+
+.graffiti__phrase-8 {
+  left: 1013px;
+  top: 38px;
+}
+
+// row center
+.graffiti__phrase-9 {
+  left: 249px;
+  top: 140px;
+}
+
+.graffiti__phrase-10 {
+  left: 9px;
+  top: 43px;
+}
+
+.graffiti__phrase-11 {
+  left: 998px;
+  top: 138px;
+}
+
+.graffiti__phrase-12 {
+  left: 39px;
+  top: 127px;
+}
+
+.graffiti__phrase-13 {
+  left: 551px;
+  top: 15px;
+}
+
+.graffiti__phrase-14 {
+  left: 333px;
+  top: 66px;
+}
+
+.graffiti__phrase-15 {
+  left: 825px;
+  top: 75px;
+}
+
+// row mid-bottom
+.graffiti__phrase-16 {
+  left: 688px;
+  top: 15px;
+}
+
+.graffiti__phrase-17 {
+  left: 587px;
+  top: 70px;
+}
+
+.graffiti__phrase-18 {
+  left: 187px;
+  top: 52px;
+}
+
+.graffiti__phrase-19 {
+  left: 12px;
+  top: 16px;
+}
+
+.graffiti__phrase-20 {
+  left: 940px;
+  top: 52px;
+}
+
+// row bottom
+.error-phrase-d {
+  left: 720px;
+  top: 47px;
+}
+
+.graffiti__phrase-21 {
+  left: 1034px;
+  top: 22px;
+}
+
+.graffiti__phrase-22 {
+  left: 18px;
+  top: 32px;
+}
+
+.graffiti__phrase-23 {
+  left: 318px;
+  top: 24px;
+}
+
+}
+
+// animation
+@keyframes sparkle {
+  0% {
+    opacity: 0.6;
+    filter: brightness(1);
+    text-shadow: none;
+  }
+  30% {
+    opacity: 1;
+    filter: brightness(1.6);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  60% {
+    opacity: 0.8;
+    filter: brightness(1.2);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    opacity: 0.6;
+    filter: brightness(1);
+    text-shadow: none;
+  }
+}
